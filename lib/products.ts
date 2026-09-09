@@ -12,7 +12,7 @@ export type Product = {
 // Names supplied by the founder. Scope, readiness and demo URLs await confirmation.
 const catalogue: {id:string;name:string;symbol:Product['symbol']}[] = [
  {id:'odivon-golf',name:'OdivonGolf',symbol:'golf'},
- {id:'odivon-fatura-pro',name:'OdivonFaturaPro',symbol:'invoice'},
+ {id:'odivon-fatura-pro',name:'OdivonFaturaPro',symbol:'invoice', demoUrl:'https://faturapro.odivon.com'},
  {id:'odivon-gym',name:'OdivonGYM',symbol:'gym'},
  {id:'odivon-apm',name:'OdivonAPM',symbol:'apm'},
  {id:'odivon-samo-int',name:'OdivonSamoInt',symbol:'integration'},
