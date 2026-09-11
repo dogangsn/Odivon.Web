@@ -22,7 +22,7 @@ const catalogue: {id:string;name:string;symbol:Product['symbol']}[] = [
  {id:'odivon-api',name:'OdivonAPI',symbol:'api'},
  {id:'odivon-b2c',name:'OdivonB2C',symbol:'b2c'},
  {id:'odivon-ikimiz',name:'Odivon ikimiz',symbol:'together'},
- {id:'odivon-vet',name:'OdivonVET',symbol:'vet'},
+ {id:'odivon-vet',name:'OdivonVET',symbol:'vet', demoUrl:'https://vet.odivon.com'},
 ];
 export const products: Product[] = catalogue.map(product=>({
  ...product,
