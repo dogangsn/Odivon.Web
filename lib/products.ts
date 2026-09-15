@@ -15,7 +15,7 @@ const catalogue: {id:string;name:string;symbol:Product['symbol']}[] = [
  {id:'odivon-fatura-pro',name:'OdivonFaturaPro',symbol:'invoice', demoUrl:'https://faturapro.odivon.com'},
  {id:'odivon-gym',name:'OdivonGYM',symbol:'gym'},
  {id:'odivon-apm',name:'OdivonAPM',symbol:'apm'},
- {id:'odivon-samo-int',name:'OdivonSamoInt',symbol:'integration'},
+ {id:'odivon-samo-int',name:'OdivonSamoInt',symbol:'integration' , demoUrl:'https://samo.odivon.com'},
  {id:'odivon-farm',name:'OdivonFARM',symbol:'farm', demoUrl:'https://farm.odivon.com'},
  {id:'odivon-spa',name:'OdivonSPA',symbol:'spa'},
  {id:'odivon-school',name:'OdivonSchool',symbol:'school', demoUrl:'https://school.odivon.com'},
