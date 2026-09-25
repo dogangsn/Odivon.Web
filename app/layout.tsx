@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
+import './portfolio.css';
 import { SiteShell } from '@/components/site-shell';
 
 const geistSans = Geist({
@@ -14,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Odivon — Fikirden ürüne',
-  description: 'Odivon, hayatı ve işi kolaylaştıran dijital ürünler geliştirir. Farklı ihtiyaçlar, iyi düşünülmüş yazılımlar.',
+  title: 'Odivon — Gerçek ihtiyaçlar için dijital ürünler',
+  description: 'Odivon; finans, eğitim, işletme yönetimi ve yaşam alanlarında kullanıma açık dijital ürünler geliştirir.',
   robots: { index: false, follow: false },
 };
 
@@ -26,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" suppressHydrationWarning>
-      <head><script dangerouslySetInnerHTML={{ __html: `(function(){var t;try{t=localStorage.getItem('odivon-theme')}catch(e){}if(t!=='light'&&t!=='dark')t=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.dataset.theme=t})()` }}/></head>
+      <head><script dangerouslySetInnerHTML={{ __html: `(function(){var t;try{t=localStorage.getItem('odivon-theme')}catch(e){}if(t!=='light'&&t!=='dark')t='dark';document.documentElement.dataset.theme=t})()` }}/></head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
