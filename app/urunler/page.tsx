@@ -7,6 +7,7 @@ import { usePreferences } from '@/components/site-shell';
 import { products, type Product } from '@/lib/products';
 import { ui } from '@/lib/ui-messages';
 import { Dialog, DialogTrigger, DialogContent, DialogTitle, DialogClose } from '@/components/ui/dialog';
+import { useScrollReveal } from '@/lib/use-scroll-reveal';
 
 const icons = { invoice: Receipt, gym: Dumbbell, apm: CalendarDays, integration: Workflow, farm: Sprout, spa: Waves, school: GraduationCap, api: Braces, together: Heart, vet: PawPrint, erp: PanelsTopLeft };
 type Filter = 'all' | 'available' | 'upcoming';
@@ -17,7 +18,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
   const Icon = icons[product.symbol];
   const available = product.status === 'available';
   const statusText = available ? u.live : product.status === 'pilot' ? (locale === 'tr' ? 'PİLOT' : 'PILOT') : u.preview;
-  return <article id={product.id} className="product-showcase" data-product={product.symbol}>
+  return <article id={product.id} className="product-showcase" data-product={product.symbol} data-reveal>
     <div className="showcase-top">
       <span className="showcase-index">{String(index + 1).padStart(2, '0')} / ODIVON</span>
       <span className={available ? 'showcase-status is-live' : 'showcase-status is-building'}><span />{statusText}</span>
@@ -59,6 +60,7 @@ export default function ProductsPage() {
   const { locale } = usePreferences();
   const u = ui[locale];
   const [filter, setFilter] = useState<Filter>('all');
+  useScrollReveal(filter);
   const liveCount = products.filter(product => product.status === 'available').length;
   const visible = products.filter(product => filter === 'all' || (filter === 'upcoming' ? product.status !== 'available' : product.status === 'available'));
   const labels = locale === 'tr'
@@ -67,16 +69,16 @@ export default function ProductsPage() {
   return <main id="main" className="portfolio-page">
     <section className="portfolio-hero wrap">
       <div className="portfolio-breadcrumb"><Link href="/">{u.home}</Link><ArrowRight size={14}/><span>{u.catalogue}</span></div>
-      <div className="portfolio-hero-grid">
+      <div className="portfolio-hero-grid" data-reveal>
         <div><span className="portfolio-kicker"><span className="status-dot"/>{labels.eyebrow}</span><h1>{labels.intro}</h1></div>
         <div className="portfolio-hero-aside"><p>{labels.lead}</p><div className="portfolio-count"><strong>{String(liveCount).padStart(2,'0')}</strong><span>{labels.live}<br/><small>{labels.note}</small></span></div></div>
       </div>
       <div className="portfolio-hero-lines" aria-hidden="true"><span/><span/><span/></div>
     </section>
     <section id="catalogue-list" className="portfolio-content wrap" aria-label={u.catalogue}>
-      <div className="portfolio-heading"><div><span className="section-label">01 / {u.catalogue.toLocaleUpperCase(locale)}</span><h2>{labels.section}</h2><p>{labels.sectionText}</p></div><fieldset className="portfolio-filters" aria-label={locale === 'tr' ? 'Ürün durumuna göre filtrele' : 'Filter products by status'}>{(['all','available','upcoming'] as const).map(key => <button key={key} type="button" className={filter === key ? 'active' : ''} aria-pressed={filter === key} onClick={() => setFilter(key)}>{labels[key]}<span>{key === 'all' ? products.length : key === 'available' ? liveCount : products.length - liveCount}</span></button>)}</fieldset></div>
+      <div className="portfolio-heading" data-reveal><div><span className="section-label">01 / {u.catalogue.toLocaleUpperCase(locale)}</span><h2>{labels.section}</h2><p>{labels.sectionText}</p></div><fieldset className="portfolio-filters" aria-label={locale === 'tr' ? 'Ürün durumuna göre filtrele' : 'Filter products by status'}>{(['all','available','upcoming'] as const).map(key => <button key={key} type="button" className={filter === key ? 'active' : ''} aria-pressed={filter === key} onClick={() => setFilter(key)}>{labels[key]}<span>{key === 'all' ? products.length : key === 'available' ? liveCount : products.length - liveCount}</span></button>)}</fieldset></div>
       <div className="portfolio-grid">{visible.map(product => <ProductCard key={product.id} product={product} index={products.indexOf(product)} />)}</div>
     </section>
-    <section className="portfolio-end"><div className="wrap portfolio-end-inner"><span className="section-label">ODIVON / {locale === 'tr' ? 'GERÇEK ÜRÜNLER' : 'REAL PRODUCTS'}</span><h2>{labels.ctaTitle}</h2><p>{labels.ctaText}</p><a href="#catalogue-list">{locale === 'tr' ? 'Ürünlere dön' : 'Back to products'}<ArrowUpRight size={18}/></a></div></section>
+    <section className="portfolio-end"><div className="wrap portfolio-end-inner" data-reveal><span className="section-label">ODIVON / {locale === 'tr' ? 'GERÇEK ÜRÜNLER' : 'REAL PRODUCTS'}</span><h2>{labels.ctaTitle}</h2><p>{labels.ctaText}</p><a href="#catalogue-list">{locale === 'tr' ? 'Ürünlere dön' : 'Back to products'}<ArrowUpRight size={18}/></a></div></section>
   </main>;
 }

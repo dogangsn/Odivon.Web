@@ -1,0 +1,56 @@
+/* Motion is progressive: content stays visible until the observer is ready. */
+[data-motion-ready] [data-reveal]{transition:opacity .72s ease,transform .78s cubic-bezier(.2,.8,.2,1),filter .72s ease,border-color .3s ease,box-shadow .3s ease}
+[data-motion-ready] [data-reveal]:not([data-revealed]){opacity:0;transform:translate3d(0,32px,0);filter:blur(5px);transition-delay:var(--reveal-delay,0ms)}
+[data-motion-ready] .product-showcase[data-reveal]{animation:none}
+
+.hero .eyebrow{animation:hero-arrive .55s both}
+.hero-line{display:block;animation:hero-arrive .68s cubic-bezier(.18,.8,.22,1) both}
+.hero-line:nth-child(1){animation-delay:0s}.hero-line:nth-child(2){animation-delay:.08s}.hero-line:nth-child(3){animation-delay:.16s}
+.hero-copy>p{animation:hero-arrive .65s .25s both}
+.hero-actions{animation:hero-arrive .65s .34s both}
+.hero-proof{animation:hero-arrive .65s .43s both}
+.hero-art-frame:before{animation:glow-breathe 8s ease-in-out infinite}
+.hero-art-frame:after{content:'';position:absolute;z-index:0;width:83%;aspect-ratio:1;border:1px solid #bb9cff30;border-radius:50%;box-shadow:0 0 0 42px #aa83ff07,0 0 0 94px #aa83ff04;animation:halo-breathe 8s ease-in-out infinite;pointer-events:none}
+.orbit-product-dot{animation:live-pulse 2.8s ease-in-out infinite}
+.orbit-product-2 .orbit-product-dot{animation-delay:.9s}.orbit-product-3 .orbit-product-dot{animation-delay:1.8s}
+.hero-actions .button svg,.contact-card-foot svg,.portfolio-end a svg{transition:transform .28s cubic-bezier(.2,.8,.2,1)}
+.hero-actions .button:hover svg,.contact-card:hover .contact-card-foot svg,.portfolio-end a:hover svg{transform:translate(4px,-4px)}
+
+.ticker{overflow:hidden!important;justify-content:flex-start!important}
+.ticker-track{display:flex;width:max-content;animation:ticker-travel 32s linear infinite;will-change:transform}
+.ticker:hover .ticker-track{animation-play-state:paused}
+.ticker-set{display:flex;align-items:center;flex-shrink:0;gap:32px;padding-right:32px}
+.ticker-set>span{display:flex;align-items:center;gap:32px;white-space:nowrap}
+.ticker-set i{font-style:normal}
+
+.home-product:before{transition:transform .6s ease,opacity .6s ease}
+.home-product:hover:before{transform:scale(1.18) translate(-12px,12px);opacity:.95}
+.principles article{transition:border-color .3s ease,background .3s ease,box-shadow .3s ease}
+.principles article:hover{border-color:#d8c8ff;background:linear-gradient(180deg,#b69aff22,transparent 75%);box-shadow:0 20px 45px #0002}
+.contact-section:before{animation:halo-breathe 9s ease-in-out infinite}
+.contact-card{overflow:hidden;position:relative}
+.contact-card:after{content:'';position:absolute;inset:-100% auto -100% -55%;width:35%;transform:rotate(24deg);background:linear-gradient(90deg,transparent,#fff2,transparent);transition:left .7s ease;pointer-events:none}
+.contact-card:hover:after{left:130%}
+
+.portfolio-hero:before{animation:halo-breathe 9s ease-in-out infinite}
+.visual-ring-one{animation:visual-orbit 18s linear infinite}
+.visual-ring-two{animation:visual-orbit-reverse 14s linear infinite}
+.showcase-visual:after{content:'';position:absolute;inset:0;background:linear-gradient(110deg,transparent 38%,#ffffff12 50%,transparent 62%);transform:translateX(-140%);transition:transform .9s ease;pointer-events:none}
+.product-showcase:hover .showcase-visual:after{transform:translateX(140%)}
+.portfolio-filters button{transition:background .25s ease,color .25s ease,transform .25s ease}
+.portfolio-filters button:hover{transform:translateY(-2px)}
+
+@keyframes hero-arrive{from{opacity:.22;transform:translateY(20px);filter:blur(4px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
+@keyframes glow-breathe{50%{opacity:.55;transform:scale(1.08)}}
+@keyframes halo-breathe{50%{opacity:.55;transform:scale(1.05)}}
+@keyframes live-pulse{50%{box-shadow:0 0 20px 5px #c4fa9f80;transform:scale(1.25)}}
+@keyframes ticker-travel{to{transform:translateX(-50%)}}
+@keyframes visual-orbit{to{transform:rotate(335deg) scaleX(1.7)}}
+@keyframes visual-orbit-reverse{to{transform:rotate(-328deg) scaleX(2)}}
+
+@media(max-width:760px){.ticker{overflow:hidden!important}.ticker-set{gap:24px;padding-right:24px}.ticker-set>span{gap:24px}.hero-art-frame:after{width:70%}.ticker-track{animation-duration:40s}}
+@media(prefers-reduced-motion:reduce){
+  [data-motion-ready] [data-reveal],.hero .eyebrow,.hero-line,.hero-copy>p,.hero-actions,.hero-proof,.hero-art-frame:before,.hero-art-frame:after,.orbit-product-dot,.ticker-track,.contact-section:before,.portfolio-hero:before,.visual-ring-one,.visual-ring-two{animation:none!important;transition:none!important}
+  [data-motion-ready] [data-reveal]:not([data-revealed]){opacity:1;transform:none;filter:none}
+  .home-product:before,.contact-card:after,.showcase-visual:after{transition:none}
+}

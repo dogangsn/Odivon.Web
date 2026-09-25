@@ -1,16 +1,19 @@
 'use client';
 
 import Link from 'next/link';
+import type { CSSProperties } from 'react';
 import { ArrowUpRight, ArrowDown, ArrowRight, Focus, Layers3, MoveUpRight, Mail } from 'lucide-react';
 import { usePreferences } from '@/components/site-shell';
 import { messages } from '@/lib/messages';
 import { ui } from '@/lib/ui-messages';
 import { products } from '@/lib/products';
+import { useScrollReveal } from '@/lib/use-scroll-reveal';
 
 const featuredIds = ['odivon-fatura-pro', 'odivon-farm', 'odivon-school'];
 const orbitIds = ['odivon-gym', 'odivon-farm', 'odivon-ikimiz'];
 
 export default function Home() {
+  useScrollReveal();
   const { locale } = usePreferences();
   const t = messages[locale];
   const u = ui[locale];
@@ -23,7 +26,7 @@ export default function Home() {
       <div className="hero-glow" aria-hidden="true" />
       <div className="hero-copy">
         <div className="eyebrow"><span className="status-dot" />{t.eyebrow}</div>
-        <h1>{t.hero[0]}<br />{t.hero[1]}<br /><em>{t.hero[2]}</em></h1>
+        <h1><span className="hero-line">{t.hero[0]}</span><span className="hero-line">{t.hero[1]}</span><span className="hero-line"><em>{t.hero[2]}</em></span></h1>
         <p>{t.intro}</p>
         <div className="hero-actions">
           <Link className="button" href="/urunler">{t.explore}<ArrowUpRight size={20} /></Link>
@@ -40,27 +43,27 @@ export default function Home() {
       </div>
       <a className="scroll-link" href="#odivon"><ArrowDown size={16} />{t.scroll}</a>
     </section>
-    <div className="ticker" aria-label={t.tickerLabel}>{t.strip.map(s => <span key={s}>{s}<i>✳</i></span>)}</div>
+    <div className="ticker" aria-label={t.tickerLabel}><div className="ticker-track">{[0, 1].map(copy => <div className="ticker-set" key={copy} aria-hidden={copy === 1}>{t.strip.map(s => <span key={s}>{s}<i>✳</i></span>)}</div>)}</div></div>
     <section id="odivon" className="about wrap">
-      <div className="section-label">{t.aboutLabel}</div>
-      <div className="about-content">
+      <div className="section-label" data-reveal>{t.aboutLabel}</div>
+      <div className="about-content" data-reveal>
         <h2>{t.aboutTitle[0]}<br /><span>{t.aboutTitle[1]}</span></h2>
         <div className="about-bottom"><span className="about-symbol" aria-hidden="true">↗</span><div><p>{t.aboutText}</p><strong>{t.aboutNote}</strong></div></div>
       </div>
     </section>
     <section className="home-products wrap">
-      <div className="home-products-heading"><div><span className="section-label">{t.productLabel}</span><h2>{u.catalogueLink}</h2><p>{t.productIntro}</p></div><Link className="text-link" href="/urunler">{u.allProducts}<ArrowUpRight size={19} /></Link></div>
-      <div className="home-product-grid">{selected.map((product, index) => <Link className="home-product" href={`/urunler#${product.id}`} key={product.id} data-product={product.symbol}><span className="home-product-number">0{index + 1} / {product.category[locale]}</span><h3>{product.name}</h3><p>{product.description[locale]}</p><span className="home-product-link">{u.details}<ArrowUpRight size={18} /></span></Link>)}</div>
+      <div className="home-products-heading" data-reveal><div><span className="section-label">{t.productLabel}</span><h2>{u.catalogueLink}</h2><p>{t.productIntro}</p></div><Link className="text-link" href="/urunler">{u.allProducts}<ArrowUpRight size={19} /></Link></div>
+      <div className="home-product-grid">{selected.map((product, index) => <Link className="home-product" href={`/urunler#${product.id}`} key={product.id} data-product={product.symbol} data-reveal style={{ '--reveal-delay': `${index * 110}ms` } as CSSProperties}><span className="home-product-number">0{index + 1} / {product.category[locale]}</span><h3>{product.name}</h3><p>{product.description[locale]}</p><span className="home-product-link">{u.details}<ArrowUpRight size={18} /></span></Link>)}</div>
     </section>
     <section id="yaklasim" className="approach wrap">
-      <div className="section-label">{t.approachLabel}</div>
-      <h2>{t.approachTitle[0]}<br /><span>{t.approachTitle[1]}</span></h2>
-      <div className="principles">{t.principles.map(([title, body], i) => <article key={title}><div className="principle-top">{[<Focus key="focus" />, <Layers3 key="layers" />, <MoveUpRight key="move" />][i]}<span>0{i + 1}</span></div><h3>{title}</h3><p>{body}</p></article>)}</div>
+      <div className="section-label" data-reveal>{t.approachLabel}</div>
+      <h2 data-reveal>{t.approachTitle[0]}<br /><span>{t.approachTitle[1]}</span></h2>
+      <div className="principles">{t.principles.map(([title, body], i) => <article key={title} data-reveal style={{ '--reveal-delay': `${i * 110}ms` } as CSSProperties}><div className="principle-top">{[<Focus key="focus" />, <Layers3 key="layers" />, <MoveUpRight key="move" />][i]}<span>0{i + 1}</span></div><h3>{title}</h3><p>{body}</p></article>)}</div>
     </section>
     <section id="iletisim" className="contact-section">
       <div className="wrap contact-inner">
-        <div className="contact-copy"><div className="contact-eyebrow"><Mail size={17} />{t.contactLabel}</div><h2>{t.contactTitle[0]}<br /><span>{t.contactTitle[1]}</span></h2><p>{t.contactText}</p></div>
-        <a className="contact-card" href="mailto:info@odivon.com"><span>{t.contactEmailLabel}</span><strong>info@odivon.com</strong><span className="contact-card-foot">{t.contactAction}<ArrowUpRight size={24} /></span></a>
+        <div className="contact-copy" data-reveal><div className="contact-eyebrow"><Mail size={17} />{t.contactLabel}</div><h2>{t.contactTitle[0]}<br /><span>{t.contactTitle[1]}</span></h2><p>{t.contactText}</p></div>
+        <a className="contact-card" href="mailto:info@odivon.com" data-reveal><span>{t.contactEmailLabel}</span><strong>info@odivon.com</strong><span className="contact-card-foot">{t.contactAction}<ArrowUpRight size={24} /></span></a>
       </div>
     </section>
   </main>;
