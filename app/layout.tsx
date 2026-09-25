@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import './portfolio.css';
+import './home-impact.css';
 import { SiteShell } from '@/components/site-shell';
 
 const geistSans = Geist({
@@ -15,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Odivon — Gerçek ihtiyaçlar için dijital ürünler',
+  title: 'Odivon — Yazılımın tek bir dünyası yok',
   description: 'Odivon; finans, eğitim, işletme yönetimi ve yaşam alanlarında kullanıma açık dijital ürünler geliştirir.',
   robots: { index: false, follow: false },
 };
