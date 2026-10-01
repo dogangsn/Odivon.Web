@@ -80,7 +80,7 @@ export const products: Product[] = [
     features: { tr: ['Hasta ve aşı kayıtları', 'Muayene ve laboratuvar takibi', 'Randevu, finans ve stok görünümü'], en: ['Patient and vaccination records', 'Examination and lab tracking', 'Appointment, finance and stock overview'] },
   },
   {
-    id: 'odivon-erp', name: 'OdivonERP', symbol: 'erp', status: 'pilot',
+    id: 'odivon-erp', name: 'OdivonERP', symbol: 'erp', status: 'available',  demoUrl: 'https://erp.odivon.com',
     category: { tr: 'Kurumsal platform', en: 'Enterprise platform' }, audience: { tr: 'Birden fazla Odivon ürünü kullanan ekipler için', en: 'For teams using multiple Odivon products' },
     description: { tr: 'Lisanslı Odivon uygulamalarına tek oturumdan ulaşmak için geliştirilen kurumsal ürün portalı.', en: 'An enterprise portal for accessing licensed Odivon applications from one session.' },
     outcome: { tr: 'Şirketinizin kullandığı ürünleri tek giriş noktasında bir araya getirmeyi hedefler.', en: 'Designed to bring your company’s Odivon products into one entry point.' },
