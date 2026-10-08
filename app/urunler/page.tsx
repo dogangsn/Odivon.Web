@@ -2,14 +2,14 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { ArrowRight, ArrowUpRight, Check, Clock3, Receipt, Dumbbell, CalendarDays, Workflow, Sprout, Waves, GraduationCap, Braces, Heart, PawPrint, PanelsTopLeft, X } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Check, Clock3, Receipt, Dumbbell, CalendarDays, Workflow, Sprout, Waves, Scissors, GraduationCap, Braces, Heart, PawPrint, PanelsTopLeft, X } from 'lucide-react';
 import { usePreferences } from '@/components/site-shell';
 import { products, type Product } from '@/lib/products';
 import { ui } from '@/lib/ui-messages';
 import { Dialog, DialogTrigger, DialogContent, DialogTitle, DialogClose } from '@/components/ui/dialog';
 import { useScrollReveal } from '@/lib/use-scroll-reveal';
 
-const icons = { invoice: Receipt, gym: Dumbbell, apm: CalendarDays, integration: Workflow, farm: Sprout, spa: Waves, school: GraduationCap, api: Braces, together: Heart, vet: PawPrint, erp: PanelsTopLeft };
+const icons = { invoice: Receipt, gym: Dumbbell, apm: CalendarDays, integration: Workflow, farm: Sprout, spa: Waves, hair: Scissors, school: GraduationCap, api: Braces, together: Heart, vet: PawPrint, erp: PanelsTopLeft };
 type Filter = 'all' | 'available' | 'upcoming';
 
 function ProductCard({ product, index }: { product: Product; index: number }) {
@@ -18,6 +18,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
   const Icon = icons[product.symbol];
   const available = product.status === 'available';
   const statusText = available ? u.live : product.status === 'pilot' ? (locale === 'tr' ? 'PİLOT' : 'PILOT') : u.preview;
+  const demoText = available ? u.demo : (locale === 'tr' ? 'Demoyu aç' : 'Open demo');
   return <article id={product.id} className="product-showcase" data-product={product.symbol} data-reveal>
     <div className="showcase-top">
       <span className="showcase-index">{String(index + 1).padStart(2, '0')} / ODIVON</span>
@@ -47,10 +48,10 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
             <div className="dialog-outcome"><span>{locale === 'tr' ? 'NE KAZANDIRIR?' : 'WHY IT MATTERS'}</span><p>{product.outcome[locale]}</p></div>
             <div className="dialog-feature-title">{locale === 'tr' ? 'Öne çıkanlar' : 'Highlights'}</div>
             <ul className="dialog-features">{product.features[locale].map(feature => <li key={feature}><Check size={17} />{feature}</li>)}</ul>
-            {product.demoUrl ? <a className="button dialog-cta" href={product.demoUrl} target="_blank" rel="noopener noreferrer">{u.demo}<ArrowUpRight size={18} /></a> : <p className="dialog-pending"><Clock3 size={17} />{product.status === 'pilot' ? (locale === 'tr' ? 'Pilot portal için herkese açık demo henüz yok.' : 'A public demo is not yet available for this pilot portal.') : (locale === 'tr' ? 'Bu ürün geliştirme aşamasında. Demo henüz açık değil.' : 'This product is in development. A demo is not available yet.')}</p>}
+            {product.demoUrl ? <a className="button dialog-cta" href={product.demoUrl} target="_blank" rel="noopener noreferrer">{demoText}<ArrowUpRight size={18} /></a> : <p className="dialog-pending"><Clock3 size={17} />{product.status === 'pilot' ? (locale === 'tr' ? 'Pilot portal için herkese açık demo henüz yok.' : 'A public demo is not yet available for this pilot portal.') : (locale === 'tr' ? 'Bu ürün geliştirme aşamasında. Demo henüz açık değil.' : 'This product is in development. A demo is not available yet.')}</p>}
           </DialogContent>
         </Dialog>
-        {product.demoUrl && <a className="showcase-demo" href={product.demoUrl} target="_blank" rel="noopener noreferrer">{u.demo}<ArrowUpRight size={17} /></a>}
+        {product.demoUrl && <a className="showcase-demo" href={product.demoUrl} target="_blank" rel="noopener noreferrer">{demoText}<ArrowUpRight size={17} /></a>}
       </div>
     </div>
   </article>;

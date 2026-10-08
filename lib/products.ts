@@ -4,7 +4,7 @@ type Copy = Record<Locale, string>;
 export type Product = {
   id: string;
   name: string;
-  symbol: 'gym' | 'invoice'  | 'apm' | 'integration' | 'farm' | 'spa' | 'school' | 'api' | 'together' | 'vet' | 'erp';
+  symbol: 'gym' | 'invoice' | 'apm' | 'integration' | 'farm' | 'spa' | 'hair' | 'school' | 'api' | 'together' | 'vet' | 'erp';
   category: Copy;
   audience: Copy;
   description: Copy;
@@ -59,11 +59,18 @@ export const products: Product[] = [
     features: { tr: ['Randevu planlama', 'Müşteri ve seans kayıtları', 'Finansal hareket görünümü'], en: ['Appointment scheduling', 'Client and session records', 'Financial activity overview'] },
   },
   {
-    id: 'odivon-apm', name: 'OdivonAPM', symbol: 'apm', status: 'development',
+    id: 'odivon-pro-hair', name: 'OdivonPro Hair', symbol: 'hair', status: 'development', demoUrl: 'https://hair.odivon.com',
+    category: { tr: 'Kuaför salonları', en: 'Hair salons' }, audience: { tr: 'Kuaför salonları ve ekipleri için', en: 'For hair salons and their teams' },
+    description: { tr: 'Randevu, müşteri ve salon operasyonlarını tek akışta buluşturmak için tasarlanan kuaför yönetim sistemi.', en: 'A salon management system designed to bring appointments, clients and daily operations into one flow.' },
+    outcome: { tr: 'Hizmet planlamasından kasa ve raporlamaya uzanan salon işlerini daha görünür kılmayı hedefler.', en: 'Designed to make salon work clearer, from service planning to checkout and reporting.' },
+    features: { tr: ['Randevu ve online rezervasyon odağı', 'Müşteri, personel ve hizmet yönetimi', 'Kasa, stok ve raporlama planı'], en: ['Appointments and online booking focus', 'Client, staff and service management', 'Checkout, inventory and reporting roadmap'] },
+  },
+  {
+    id: 'odivon-apm', name: 'OdivonAPM', symbol: 'apm', status: 'available', demoUrl: 'https://apm.odivon.com',
     category: { tr: 'Randevu yönetimi', en: 'Appointment management' }, audience: { tr: 'Randevuyla çalışan ekipler için', en: 'For appointment-based teams' },
-    description: { tr: 'Randevu planlamasını ve günlük takvim akışını daha düzenli yönetmek için geliştiriliyor.', en: 'In development to make appointment planning and daily schedules easier to manage.' },
-    outcome: { tr: 'Randevu sürecini sadeleştiren bir çalışma alanı oluşturmayı hedefliyor.', en: 'Aims to create a simpler workspace for appointment workflows.' },
-    features: { tr: ['Randevu yönetimi odağı', 'Geliştirme aşamasında', 'Demo henüz paylaşılmadı'], en: ['Focused on appointment management', 'Currently in development', 'Demo not yet available'] },
+    description: { tr: 'Randevuları ve günlük takvim akışını tek bir çalışma alanında düzenleyin.', en: 'Organize appointments and daily schedules in one workspace.' },
+    outcome: { tr: 'Planlanan randevuları daha net görün ve günlük akışı kolayca takip edin.', en: 'See planned appointments more clearly and keep track of the day.' },
+    features: { tr: ['Randevu oluşturma ve yönetimi', 'Günlük takvim görünümü', 'Düzenli planlama akışı'], en: ['Appointment creation and management', 'Daily calendar view', 'Organized scheduling flow'] },
   },
   {
     id: 'odivon-school', name: 'OdivonSchool', symbol: 'school', status: 'available', demoUrl: 'https://school.odivon.com',
