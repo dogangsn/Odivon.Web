@@ -32,10 +32,10 @@ export const products: Product[] = [
   },
   {
     id: 'odivon-fatura-pro', name: 'OdivonFaturaPro', symbol: 'invoice', status: 'available', demoUrl: 'https://faturapro.odivon.com',
-    category: { tr: 'Finans', en: 'Finance' }, audience: { tr: 'Fatura hazırlayan işletmeler için', en: 'For businesses preparing invoices' },
-    description: { tr: 'Fatura ve proformalarınızı, işlem yaptığınız ülkeyi seçerek tek bir akışta hazırlayın.', en: 'Prepare invoices and pro formas in one flow, starting with the country you do business in.' },
-    outcome: { tr: 'Ülkeye göre değişen belge süreçlerini daha anlaşılır bir başlangıç noktasında toplayın.', en: 'Bring country-specific document workflows into a clearer starting point.' },
-    features: { tr: ['Ülke seçimiyle başlayan belge akışı', 'Dijital fatura ve proforma hazırlama', 'Türkçe ve İngilizce arayüz'], en: ['Country-first document flow', 'Digital invoices and pro formas', 'Turkish and English interface'] },
+    category: { tr: 'Fatura & finans', en: 'Invoicing & finance' }, audience: { tr: 'Fatura ve proforma süreçlerini yöneten işletmeler için', en: 'For businesses managing invoices and pro formas' },
+    description: { tr: 'Ülkenizi seçin; fatura ve proformaları hazırlayıp PDF olarak indirin. Müşteri, gider ve raporlarınızı aynı çalışma alanında takip edin.', en: 'Choose your country, create invoices and pro formas, and download PDFs. Keep customers, expenses and reports in one workspace.' },
+    outcome: { tr: 'Belge hazırlamadan finansal takibe kadar günlük işlerinizi dağınık araçlar arasında kaybolmadan yönetin.', en: 'Manage daily work from document creation to financial tracking without switching between scattered tools.' },
+    features: { tr: ['Ülke seçimiyle fatura ve proforma oluşturma', 'Faturaları PDF olarak indirme', 'Müşteri, gider ve rapor takibi'], en: ['Create invoices and pro formas by country', 'Download invoices as PDFs', 'Track customers, expenses and reports'] },
   },
   {
     id: 'odivon-vet', name: 'OdivonVET', symbol: 'vet', status: 'available', demoUrl: 'https://vet.odivon.com',
