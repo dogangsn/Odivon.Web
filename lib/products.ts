@@ -4,7 +4,7 @@ type Copy = Record<Locale, string>;
 export type Product = {
   id: string;
   name: string;
-  symbol: 'gym' | 'invoice' | 'apm' | 'integration' | 'farm' | 'spa' | 'hair' | 'school' | 'api' | 'together' | 'vet' | 'erp';
+  symbol: 'gym' | 'invoice' | 'apm' | 'integration' | 'farm' | 'spa' | 'beauty' | 'hair' | 'school' | 'api' | 'together' | 'vet' | 'erp';
   category: Copy;
   audience: Copy;
   description: Copy;
@@ -57,6 +57,13 @@ export const products: Product[] = [
     description: { tr: 'Randevuları, müşterileri, seansları ve finansal hareketleri ortak bir çalışma alanında yönetin.', en: 'Manage appointments, clients, sessions and finances in one workspace.' },
     outcome: { tr: 'Ekibinizin günlük operasyonunu parçalı araçlar yerine tek akışta görün.', en: 'Give your team one clear view of the daily operation.' },
     features: { tr: ['Randevu planlama', 'Müşteri ve seans kayıtları', 'Finansal hareket görünümü'], en: ['Appointment scheduling', 'Client and session records', 'Financial activity overview'] },
+  },
+  {
+    id: 'odivon-pro-beauty', name: 'OdivonProBeauty', symbol: 'beauty', status: 'available', demoUrl: 'https://beauty.odivon.com',
+    category: { tr: 'Güzellik merkezi yönetimi', en: 'Beauty center management' }, audience: { tr: 'Güzellik merkezleri, bakım stüdyoları ve çok şubeli ekipler için', en: 'For beauty centers, wellness studios and multi-branch teams' },
+    description: { tr: 'Randevudan bakıma, müşteri ilişkisinden kasaya kadar güzellik merkezinizin günlük akışını tek yerde yönetin. Şubelerinizin ritmini kaybetmeden hizmet kalitesine odaklanın.', en: 'Run the daily flow of your beauty center in one place, from appointments and treatments to customer relationships and payments. Keep every branch coordinated while focusing on service.' },
+    outcome: { tr: 'Uzman, oda ve cihaz planlamasını netleştirin; paket ve seansları izleyin, müşteri geçmişini ve işletme performansını aynı çalışma alanında görün.', en: 'Coordinate specialists, rooms and devices; follow packages and sessions, customer history and business performance from one workspace.' },
+    features: { tr: ['Uzman, oda ve cihaz uygunluğuna göre randevu takvimi', 'Müşteri profilleri ve bakım geçmişi', 'Paketler, kalan seanslar ve hizmet kataloğu', 'Personel, şube ve vardiya yönetimi', 'Kasa, stok ve performans raporları', 'Randevu ve paketleri görüntüleyen müşteri portalı'], en: ['Appointment calendar for specialists, rooms and devices', 'Customer profiles and treatment history', 'Packages, remaining sessions and service catalogue', 'Staff, branch and shift management', 'Payments, inventory and performance reports', 'Customer portal for appointments and packages'] },
   },
   {
     id: 'odivon-pro-hair', name: 'OdivonPro Hair', symbol: 'hair', status: 'development', demoUrl: 'https://hair.odivon.com',

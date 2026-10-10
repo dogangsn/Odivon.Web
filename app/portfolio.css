@@ -14,3 +14,6 @@ html[data-theme=light] .portfolio-hero:before{opacity:.45}html[data-theme=light]
 @media(prefers-reduced-motion:reduce){.product-showcase:hover,.home-product:hover{transform:none}}
 .product-showcase{scroll-margin-top:24px}
 .product-showcase[data-product=hair]{--product-accent:#e2a1cf}
+
+.product-showcase[data-product=beauty]{--product-accent:#f3a4d8}
+.product-dialog{overflow-y:auto}

@@ -9,7 +9,7 @@ import { ui } from '@/lib/ui-messages';
 import { products } from '@/lib/products';
 import { useScrollReveal } from '@/lib/use-scroll-reveal';
 
-const featuredIds = ['odivon-fatura-pro', 'odivon-farm', 'odivon-school'];
+const featuredIds = ['odivon-fatura-pro', 'odivon-pro-beauty', 'odivon-farm'];
 const orbitIds = ['odivon-gym', 'odivon-farm', 'odivon-ikimiz'];
 
 export default function Home() {

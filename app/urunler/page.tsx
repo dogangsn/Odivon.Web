@@ -2,14 +2,14 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { ArrowRight, ArrowUpRight, Check, Clock3, Receipt, Dumbbell, CalendarDays, Workflow, Sprout, Waves, Scissors, GraduationCap, Braces, Heart, PawPrint, PanelsTopLeft, X } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Check, Clock3, Receipt, Dumbbell, CalendarDays, Workflow, Sprout, Waves, Sparkles, Scissors, GraduationCap, Braces, Heart, PawPrint, PanelsTopLeft, X } from 'lucide-react';
 import { usePreferences } from '@/components/site-shell';
 import { products, type Product } from '@/lib/products';
 import { ui } from '@/lib/ui-messages';
 import { Dialog, DialogTrigger, DialogContent, DialogTitle, DialogClose } from '@/components/ui/dialog';
 import { useScrollReveal } from '@/lib/use-scroll-reveal';
 
-const icons = { invoice: Receipt, gym: Dumbbell, apm: CalendarDays, integration: Workflow, farm: Sprout, spa: Waves, hair: Scissors, school: GraduationCap, api: Braces, together: Heart, vet: PawPrint, erp: PanelsTopLeft };
+const icons = { invoice: Receipt, gym: Dumbbell, apm: CalendarDays, integration: Workflow, farm: Sprout, spa: Waves, beauty: Sparkles, hair: Scissors, school: GraduationCap, api: Braces, together: Heart, vet: PawPrint, erp: PanelsTopLeft };
 type Filter = 'all' | 'available' | 'upcoming';
 
 function ProductCard({ product, index }: { product: Product; index: number }) {
