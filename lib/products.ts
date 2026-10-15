@@ -4,7 +4,7 @@ type Copy = Record<Locale, string>;
 export type Product = {
   id: string;
   name: string;
-  symbol: 'gym' | 'invoice' | 'apm' | 'integration' | 'farm' | 'spa' | 'beauty' | 'hair' | 'school' | 'api' | 'together' | 'vet' | 'erp';
+  symbol: 'gym' | 'invoice' | 'apm' | 'integration' | 'farm' | 'spa' | 'beauty' | 'rent' | 'hair' | 'school' | 'api' | 'together' | 'vet' | 'erp';
   category: Copy;
   audience: Copy;
   description: Copy;
@@ -64,6 +64,13 @@ export const products: Product[] = [
     description: { tr: 'Randevudan bakıma, müşteri ilişkisinden kasaya kadar güzellik merkezinizin günlük akışını tek yerde yönetin. Şubelerinizin ritmini kaybetmeden hizmet kalitesine odaklanın.', en: 'Run the daily flow of your beauty center in one place, from appointments and treatments to customer relationships and payments. Keep every branch coordinated while focusing on service.' },
     outcome: { tr: 'Uzman, oda ve cihaz planlamasını netleştirin; paket ve seansları izleyin, müşteri geçmişini ve işletme performansını aynı çalışma alanında görün.', en: 'Coordinate specialists, rooms and devices; follow packages and sessions, customer history and business performance from one workspace.' },
     features: { tr: ['Uzman, oda ve cihaz uygunluğuna göre randevu takvimi', 'Müşteri profilleri ve bakım geçmişi', 'Paketler, kalan seanslar ve hizmet kataloğu', 'Personel, şube ve vardiya yönetimi', 'Kasa, stok ve performans raporları', 'Randevu ve paketleri görüntüleyen müşteri portalı'], en: ['Appointment calendar for specialists, rooms and devices', 'Customer profiles and treatment history', 'Packages, remaining sessions and service catalogue', 'Staff, branch and shift management', 'Payments, inventory and performance reports', 'Customer portal for appointments and packages'] },
+  },
+  {
+    id: 'odivon-rent-a-car', name: 'OdivonRentACar', symbol: 'rent', status: 'available', demoUrl: 'https://rent.odivon.com',
+    category: { tr: 'Araç kiralama & filo', en: 'Car rental & fleet' }, audience: { tr: 'Araç kiralama şirketleri ve araç hazırlık / oto yıkama ekipleri için', en: 'For rental companies and vehicle preparation / car wash teams' },
+    description: { tr: 'Filo, müsaitlik, rezervasyon ve kiralama süreçlerini tek çalışma alanında birleştirin. Araç teslimi öncesi bakım ve yıkama hazırlığını da müşteri takip görevleriyle görünür kılın.', en: 'Bring fleet availability, bookings and rentals into one workspace. Track pre-handover maintenance and wash preparation with customer follow-up tasks.' },
+    outcome: { tr: 'Hangi aracın müsait, kirada veya bakımda olduğunu görün; rezervasyonu kiralamaya dönüştürürken teslim tarihlerini, müşteri kayıtlarını ve finans hareketlerini izleyin.', en: 'See which cars are available, rented or under maintenance; follow handover dates, customer records and financial activity as bookings become rentals.' },
+    features: { tr: ['14 günlük araç takvimi ve bakım görünümü', 'Şube ve tarih seçimiyle online araç rezervasyonu', 'Rezervasyonu kiralamaya dönüştürme ve teslim / iade takibi', 'Müşteri kayıtları ve CRM takip görevleri', 'Tahsilat, depozito ve iade hareketlerini izleme', 'Oto yıkama ve araç hazırlığı için takip görevleri'], en: ['14-day vehicle calendar and maintenance view', 'Online car booking by branch and date', 'Convert bookings to rentals and track handover / return dates', 'Customer records and CRM follow-up tasks', 'Track payments, deposits and refunds', 'Follow-up tasks for car wash and vehicle preparation'] },
   },
   {
     id: 'odivon-pro-hair', name: 'OdivonPro Hair', symbol: 'hair', status: 'development', demoUrl: 'https://hair.odivon.com',
