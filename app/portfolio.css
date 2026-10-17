@@ -18,3 +18,5 @@ html[data-theme=light] .portfolio-hero:before{opacity:.45}html[data-theme=light]
 .product-showcase[data-product=beauty]{--product-accent:#f3a4d8}
 .product-dialog{overflow-y:auto}
 .product-showcase[data-product=rent]{--product-accent:#81c8f4}
+.product-showcase[data-product=driving]{--product-accent:#f0b35f}
+.product-showcase[data-product=parking]{--product-accent:#67d2c2}

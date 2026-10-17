@@ -4,7 +4,7 @@ type Copy = Record<Locale, string>;
 export type Product = {
   id: string;
   name: string;
-  symbol: 'gym' | 'invoice' | 'apm' | 'integration' | 'farm' | 'spa' | 'beauty' | 'rent' | 'hair' | 'school' | 'api' | 'together' | 'vet' | 'erp';
+  symbol: 'gym' | 'invoice' | 'apm' | 'integration' | 'farm' | 'spa' | 'beauty' | 'rent' | 'driving' | 'parking' | 'hair' | 'school' | 'api' | 'together' | 'vet' | 'erp';
   category: Copy;
   audience: Copy;
   description: Copy;
@@ -71,6 +71,20 @@ export const products: Product[] = [
     description: { tr: 'Filo, müsaitlik, rezervasyon ve kiralama süreçlerini tek çalışma alanında birleştirin. Araç teslimi öncesi bakım ve yıkama hazırlığını da müşteri takip görevleriyle görünür kılın.', en: 'Bring fleet availability, bookings and rentals into one workspace. Track pre-handover maintenance and wash preparation with customer follow-up tasks.' },
     outcome: { tr: 'Hangi aracın müsait, kirada veya bakımda olduğunu görün; rezervasyonu kiralamaya dönüştürürken teslim tarihlerini, müşteri kayıtlarını ve finans hareketlerini izleyin.', en: 'See which cars are available, rented or under maintenance; follow handover dates, customer records and financial activity as bookings become rentals.' },
     features: { tr: ['14 günlük araç takvimi ve bakım görünümü', 'Şube ve tarih seçimiyle online araç rezervasyonu', 'Rezervasyonu kiralamaya dönüştürme ve teslim / iade takibi', 'Müşteri kayıtları ve CRM takip görevleri', 'Tahsilat, depozito ve iade hareketlerini izleme', 'Oto yıkama ve araç hazırlığı için takip görevleri'], en: ['14-day vehicle calendar and maintenance view', 'Online car booking by branch and date', 'Convert bookings to rentals and track handover / return dates', 'Customer records and CRM follow-up tasks', 'Track payments, deposits and refunds', 'Follow-up tasks for car wash and vehicle preparation'] },
+  },
+  {
+    id: 'odivon-driving-school', name: 'OdivonDrivingSchool', symbol: 'driving', status: 'development', demoUrl: 'https://driving.odivon.com',
+    category: { tr: 'Sürücü kursu yönetimi', en: 'Driving school management' }, audience: { tr: 'Sürücü kursları, eğitmenler ve operasyon ekipleri için', en: 'For driving schools, instructors and operations teams' },
+    description: { tr: 'Kursiyer kayıtlarını, eğitmenleri, eğitim araçlarını ve direksiyon derslerini tek operasyon merkezinde yönetin. Günlük planı herkes için daha açık ve düzenli hale getirin.', en: 'Manage student records, instructors, training vehicles and driving lessons from one operations center. Make the daily schedule clearer for the entire team.' },
+    outcome: { tr: 'Kursiyer, eğitmen ve aracı aynı zaman çizelgesinde çakışmasız eşleştirin; belge durumlarını, sertifikaları ve araç uygunluğunu ders planına bağlayın.', en: 'Match students, instructors and vehicles without schedule conflicts, while connecting document status, certificates and vehicle availability to lesson planning.' },
+    features: { tr: ['Kursiyer kayıtları ve belge kontrolü', 'Eğitmen sertifikaları ve sınıf yetkinlikleri', 'Eğitim filosu, muayene ve sigorta tarihleri', 'Kursiyer, eğitmen ve araç için çakışma kontrollü ders planı', 'Yaklaşan dersler ve operasyon göstergeleri', 'Türkçe ve İngilizce yönetim deneyimi'], en: ['Student records and document checks', 'Instructor certificates and licence-class qualifications', 'Training fleet, inspection and insurance dates', 'Conflict-safe lessons for students, instructors and vehicles', 'Upcoming lessons and operational indicators', 'Turkish and English management experience'] },
+  },
+  {
+    id: 'odivon-park', name: 'OdivonPark', symbol: 'parking', status: 'available', demoUrl: 'https://park.odivon.com',
+    category: { tr: 'Akıllı otopark yönetimi', en: 'Smart parking management' }, audience: { tr: 'Otopark işletmeleri, tesis yöneticileri ve saha ekipleri için', en: 'For parking operators, facility managers and field teams' },
+    description: { tr: 'Doluluk, araç giriş–çıkışı, ücretlendirme ve tahsilat akışlarını tek kontrol noktasında yönetin. Birden fazla tesisin anlık durumunu güvenli ve ölçülebilir hale getirin.', en: 'Manage occupancy, vehicle entry and exit, pricing and payments from one control point. Make real-time operations across multiple facilities secure and measurable.' },
+    outcome: { tr: 'Kapasiteyi ve içerideki araçları anlık görün; plaka veya QR biletle oturum başlatın, tarifeyi hesaplayın ve kasa kapanışına kadar tüm hareketi izleyin.', en: 'See capacity and parked vehicles in real time; start sessions by plate or QR ticket, calculate tariffs and follow every transaction through cash close.' },
+    features: { tr: ['Canlı doluluk, giriş ve çıkış takibi', 'Plaka veya QR biletle park oturumu', 'Araç kategorilerine göre esnek tarifeler', 'Nakit ve harici POS tahsilatları ile kasa vardiyası', 'Tesis, alan, şerit ve kapasite yönetimi', 'Edge cihaz eşleştirme ve çevrimdışı olay kuyruğu'], en: ['Live occupancy, entry and exit tracking', 'Parking sessions by plate or QR ticket', 'Flexible tariffs by vehicle category', 'Cash and external POS payments with cashier shifts', 'Facility, zone, lane and capacity management', 'Edge-device pairing and offline event queue'] },
   },
   {
     id: 'odivon-pro-hair', name: 'OdivonPro Hair', symbol: 'hair', status: 'development', demoUrl: 'https://hair.odivon.com',
