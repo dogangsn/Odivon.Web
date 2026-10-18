@@ -73,7 +73,7 @@ export const products: Product[] = [
     features: { tr: ['14 günlük araç takvimi ve bakım görünümü', 'Şube ve tarih seçimiyle online araç rezervasyonu', 'Rezervasyonu kiralamaya dönüştürme ve teslim / iade takibi', 'Müşteri kayıtları ve CRM takip görevleri', 'Tahsilat, depozito ve iade hareketlerini izleme', 'Oto yıkama ve araç hazırlığı için takip görevleri'], en: ['14-day vehicle calendar and maintenance view', 'Online car booking by branch and date', 'Convert bookings to rentals and track handover / return dates', 'Customer records and CRM follow-up tasks', 'Track payments, deposits and refunds', 'Follow-up tasks for car wash and vehicle preparation'] },
   },
   {
-    id: 'odivon-driving-school', name: 'OdivonDrivingSchool', symbol: 'driving', status: 'development', demoUrl: 'https://driving.odivon.com',
+    id: 'odivon-driving-school', name: 'OdivonDrivingSchool', symbol: 'driving', status: 'available', demoUrl: 'https://driving.odivon.com',
     category: { tr: 'Sürücü kursu yönetimi', en: 'Driving school management' }, audience: { tr: 'Sürücü kursları, eğitmenler ve operasyon ekipleri için', en: 'For driving schools, instructors and operations teams' },
     description: { tr: 'Kursiyer kayıtlarını, eğitmenleri, eğitim araçlarını ve direksiyon derslerini tek operasyon merkezinde yönetin. Günlük planı herkes için daha açık ve düzenli hale getirin.', en: 'Manage student records, instructors, training vehicles and driving lessons from one operations center. Make the daily schedule clearer for the entire team.' },
     outcome: { tr: 'Kursiyer, eğitmen ve aracı aynı zaman çizelgesinde çakışmasız eşleştirin; belge durumlarını, sertifikaları ve araç uygunluğunu ders planına bağlayın.', en: 'Match students, instructors and vehicles without schedule conflicts, while connecting document status, certificates and vehicle availability to lesson planning.' },
@@ -87,7 +87,7 @@ export const products: Product[] = [
     features: { tr: ['Canlı doluluk, giriş ve çıkış takibi', 'Plaka veya QR biletle park oturumu', 'Araç kategorilerine göre esnek tarifeler', 'Nakit ve harici POS tahsilatları ile kasa vardiyası', 'Tesis, alan, şerit ve kapasite yönetimi', 'Edge cihaz eşleştirme ve çevrimdışı olay kuyruğu'], en: ['Live occupancy, entry and exit tracking', 'Parking sessions by plate or QR ticket', 'Flexible tariffs by vehicle category', 'Cash and external POS payments with cashier shifts', 'Facility, zone, lane and capacity management', 'Edge-device pairing and offline event queue'] },
   },
   {
-    id: 'odivon-pro-hair', name: 'OdivonPro Hair', symbol: 'hair', status: 'development', demoUrl: 'https://hair.odivon.com',
+    id: 'odivon-pro-hair', name: 'OdivonPro Hair', symbol: 'hair', status: 'available', demoUrl: 'https://hair.odivon.com',
     category: { tr: 'Kuaför salonları', en: 'Hair salons' }, audience: { tr: 'Kuaför salonları ve ekipleri için', en: 'For hair salons and their teams' },
     description: { tr: 'Randevu, müşteri ve salon operasyonlarını tek akışta buluşturmak için tasarlanan kuaför yönetim sistemi.', en: 'A salon management system designed to bring appointments, clients and daily operations into one flow.' },
     outcome: { tr: 'Hizmet planlamasından kasa ve raporlamaya uzanan salon işlerini daha görünür kılmayı hedefler.', en: 'Designed to make salon work clearer, from service planning to checkout and reporting.' },
