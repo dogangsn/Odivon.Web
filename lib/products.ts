@@ -88,10 +88,10 @@ export const products: Product[] = [
   },
   {
     id: 'odivon-pro-hair', name: 'OdivonPro Hair', symbol: 'hair', status: 'available', demoUrl: 'https://hair.odivon.com',
-    category: { tr: 'Kuaför salonları', en: 'Hair salons' }, audience: { tr: 'Kuaför salonları ve ekipleri için', en: 'For hair salons and their teams' },
-    description: { tr: 'Randevu, müşteri ve salon operasyonlarını tek akışta buluşturmak için tasarlanan kuaför yönetim sistemi.', en: 'A salon management system designed to bring appointments, clients and daily operations into one flow.' },
-    outcome: { tr: 'Hizmet planlamasından kasa ve raporlamaya uzanan salon işlerini daha görünür kılmayı hedefler.', en: 'Designed to make salon work clearer, from service planning to checkout and reporting.' },
-    features: { tr: ['Randevu ve online rezervasyon odağı', 'Müşteri, personel ve hizmet yönetimi', 'Kasa, stok ve raporlama planı'], en: ['Appointments and online booking focus', 'Client, staff and service management', 'Checkout, inventory and reporting roadmap'] },
+    category: { tr: 'Kuaför & salon yönetimi', en: 'Hair salon management' }, audience: { tr: 'Kuaför salonları, salon sahipleri ve çok şubeli ekipler için', en: 'For hair salons, salon owners and multi-branch teams' },
+    description: { tr: 'Randevudan kasaya, boya formülünden personel primine kadar salonunuzun tüm işleri aynı yerde. Defter, ajanda ve hesap tablolarını bırakın; ekibiniz aynı ekrana baksın.', en: 'From appointments to checkout, colour formulas to staff commissions, everything your salon runs on in one place. Leave the notebooks and spreadsheets behind and give your team one screen.' },
+    outcome: { tr: 'Salon kapalıyken bile online randevu alın, müşterinin rengini ilk seferki gibi tutturun ve ay sonu prim hesabını tartışmasız kapatın. Her şubenin cirosunu ve personel performansını tek panelden izleyin.', en: 'Take online bookings even after hours, match a client’s colour exactly every time and close monthly commissions without disputes. Follow revenue and staff performance for every branch from one panel.' },
+    features: { tr: ['Personel bazlı akıllı randevu takvimi', 'Instagram ve WhatsApp’a eklenebilen online randevu linki', 'Randevudan aktarılan hizmetlerle hızlı kasa (POS) ve bölünmüş ödeme', 'Müşteri kartında saklanan boya formülü arşivi', 'Kurala göre otomatik hesaplanan personel primleri', 'Şube bazlı yönetim, stok, paket ve ciro raporları'], en: ['Smart appointment calendar by staff member', 'Online booking link for Instagram and WhatsApp', 'Fast checkout (POS) with services carried over from appointments and split payments', 'Colour formula archive on every client profile', 'Staff commissions calculated automatically by your rules', 'Branch-level management, inventory, packages and revenue reports'] },
   },
   {
     id: 'odivon-apm', name: 'OdivonAPM', symbol: 'apm', status: 'available', demoUrl: 'https://apm.odivon.com',
