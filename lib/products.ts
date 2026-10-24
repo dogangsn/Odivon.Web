@@ -4,7 +4,7 @@ type Copy = Record<Locale, string>;
 export type Product = {
   id: string;
   name: string;
-  symbol: 'gym' | 'invoice' | 'apm' | 'integration' | 'farm' | 'spa' | 'beauty' | 'rent' | 'driving' | 'parking' | 'hair' | 'school' | 'api' | 'together' | 'vet' | 'erp';
+  symbol: 'gym' | 'invoice' | 'apm' | 'integration' | 'farm' | 'spa' | 'beauty' | 'rent' | 'driving' | 'parking' | 'hair' | 'school' | 'api' | 'together' | 'vet' | 'erp' | 'fgas' | 'machine' | 'food' | 'safety' | 'fire' | 'fair' | 'cargo' | 'kids' | 'cyber' | 'diet';
   category: Copy;
   audience: Copy;
   description: Copy;
@@ -127,5 +127,75 @@ export const products: Product[] = [
     description: { tr: 'Ortak eşleşmeler, günlük küçük görevler ve buluşma fikirleriyle rutine yeni bir enerji katın.', en: 'Bring new energy to your routine with shared matches, daily prompts and date ideas.' },
     outcome: { tr: 'Birlikte geçirdiğiniz zamana konuşacak ve deneyecek yeni şeyler ekleyin.', en: 'Find new things to talk about and try together.' },
     features: { tr: ['Secret Match ile ortak seçimler', 'Günlük görevler ve çift testleri', 'Buluşma fikirleri ve ortak istek listesi'], en: ['Shared choices through Secret Match', 'Daily prompts and couple quizzes', 'Date ideas and a shared wish list'] },
+  },
+  {
+    id: 'odivon-fgas', name: 'OdivonF-Gas', symbol: 'fgas', status: 'development',
+    category: { tr: 'F-Gaz uyumluluğu', en: 'F-gas compliance' }, audience: { tr: 'Soğutma, iklimlendirme ve ısı pompası servisleri için', en: 'For refrigeration, HVAC and heat-pump service companies' },
+    description: { tr: 'Ekipman, gaz hareketi, sızıntı kontrolü ve teknisyen kanıtlarını tek denetim akışında yönetin.', en: 'Manage equipment, refrigerant movements, leak checks and technician evidence in one audit-ready flow.' },
+    outcome: { tr: 'Yaklaşan kontrolleri kaçırmadan müşteriye ve denetçiye sunulabilir eksiksiz bir servis geçmişi oluşturun.', en: 'Build a complete service history for customers and auditors without missing an upcoming inspection.' },
+    features: { tr: ['Ekipman ve gaz envanteri', 'Sızıntı kontrol planı', 'Denetime hazır servis kayıtları'], en: ['Equipment and refrigerant inventory', 'Leak-check planning', 'Audit-ready service records'] },
+  },
+  {
+    id: 'odivon-machine-ce', name: 'OdivonMachineCE', symbol: 'machine', status: 'development',
+    category: { tr: 'Makine uygunluğu', en: 'Machinery compliance' }, audience: { tr: 'Makine üreticileri, entegratörler ve teknik danışmanlar için', en: 'For machinery manufacturers, integrators and technical consultants' },
+    description: { tr: 'Risk değerlendirmesinden uygunluk beyanına kadar CE teknik dosyasını yaşayan bir süreç olarak yönetin.', en: 'Manage the CE technical file as a living process, from risk assessment through declaration of conformity.' },
+    outcome: { tr: 'Riskleri, standartları ve kanıtları ürün sürümüne bağlayarak dosya hazırlama süresini ve eksik belge riskini azaltın.', en: 'Link risks, standards and evidence to product versions to reduce preparation time and missing-document risk.' },
+    features: { tr: ['Makine ve varyant sicili', 'Risk değerlendirme matrisi', 'Kanıt ve beyan dosyası'], en: ['Machine and variant register', 'Risk assessment matrix', 'Evidence and declaration file'] },
+  },
+  {
+    id: 'odivon-food-label', name: 'OdivonFoodLabel', symbol: 'food', status: 'development',
+    category: { tr: 'Gıda etiket yönetimi', en: 'Food label management' }, audience: { tr: 'Gıda üreticileri, özel markalar ve kalite ekipleri için', en: 'For food manufacturers, private labels and quality teams' },
+    description: { tr: 'Reçete, alerjen, besin değeri ve zorunlu beyanları baskıdan önce tek ürün kaydında doğrulayın.', en: 'Validate recipes, allergens, nutrition values and mandatory statements in one product record before print.' },
+    outcome: { tr: 'Etiket revizyonlarını hızlandırın, alerjen hatalarını azaltın ve onay geçmişini koruyun.', en: 'Speed up label revisions, reduce allergen errors and preserve the full approval history.' },
+    features: { tr: ['Reçete ve bileşen yönetimi', 'Alerjen kontrol motoru', 'Çok dilli etiket sürümleri'], en: ['Recipe and ingredient management', 'Allergen control engine', 'Multilingual label versions'] },
+  },
+  {
+    id: 'odivon-product-safe', name: 'OdivonProductSafe', symbol: 'safety', status: 'development',
+    category: { tr: 'Ürün güvenliği', en: 'Product safety' }, audience: { tr: 'Üreticiler, ithalatçılar ve çevrim içi satıcılar için', en: 'For manufacturers, importers and online sellers' },
+    description: { tr: 'Ürün kimliği, ekonomik operatör, risk kanıtı ve olay kayıtlarını satış kanallarıyla ilişkilendirin.', en: 'Connect product identity, economic operators, risk evidence and incident records to sales channels.' },
+    outcome: { tr: 'Her ürün için izlenebilir bir güvenlik dosyası kurun ve olaylarda doğru aksiyona daha hızlı geçin.', en: 'Create a traceable safety file for every product and respond faster when incidents occur.' },
+    features: { tr: ['Ürün güvenlik dosyası', 'Risk ve kanıt yönetimi', 'Olay ve geri çağırma akışı'], en: ['Product safety file', 'Risk and evidence management', 'Incident and recall workflow'] },
+  },
+  {
+    id: 'odivon-fire-safe', name: 'OdivonFireSafe', symbol: 'fire', status: 'development',
+    category: { tr: 'Yangın güvenliği operasyonu', en: 'Fire safety operations' }, audience: { tr: 'Yangın firmaları, tesis yönetimleri ve saha ekipleri için', en: 'For fire-safety companies, facilities and field teams' },
+    description: { tr: 'Söndürücü, dolap ve alarm varlıklarının periyodik bakımını QR destekli saha akışıyla izleyin.', en: 'Track periodic maintenance for extinguishers, cabinets and alarms with a QR-assisted field workflow.' },
+    outcome: { tr: 'Bakım tarihlerini kaçırmadan sahadaki fotoğraf, ölçüm ve imza kanıtını müşteriye anında sunun.', en: 'Avoid missed maintenance dates and deliver field photos, measurements and signatures to customers instantly.' },
+    features: { tr: ['QR kimlikli varlık envanteri', 'Bakım ve ekip planlama', 'Müşteri raporu ve sertifika'], en: ['QR-tagged asset inventory', 'Maintenance and crew planning', 'Customer reports and certificates'] },
+  },
+  {
+    id: 'odivon-pay-fair', name: 'OdivonPayFair', symbol: 'fair', status: 'development',
+    category: { tr: 'Ücret şeffaflığı', en: 'Pay transparency' }, audience: { tr: 'İK, ücretlendirme ve yönetim ekipleri için', en: 'For HR, compensation and leadership teams' },
+    description: { tr: 'Eşdeğer iş gruplarını, ücret farklarını ve düzeltme aksiyonlarını kontrollü bir analiz alanında görünür kılın.', en: 'Make equivalent-work groups, pay gaps and remediation actions visible in a controlled analytics workspace.' },
+    outcome: { tr: 'Yönetimin açıklayabildiği ücret kararları ve ölçülebilir düzeltme planları oluşturun.', en: 'Create explainable compensation decisions and measurable remediation plans.' },
+    features: { tr: ['Güvenli veri içe aktarma', 'Eşdeğer iş ve fark analizi', 'Aksiyon ve yönetim raporu'], en: ['Secure data import', 'Equivalent-work and gap analysis', 'Actions and management reporting'] },
+  },
+  {
+    id: 'odivon-cargo-docs', name: 'OdivonCargoDocs', symbol: 'cargo', status: 'development',
+    category: { tr: 'Dijital taşıma belgeleri', en: 'Digital freight documents' }, audience: { tr: 'Nakliyeciler, lojistik operatörleri ve yük sahipleri için', en: 'For carriers, logistics operators and cargo owners' },
+    description: { tr: 'Taşıma emri, taraflar, yük bilgisi ve kanıt belgelerini sevkiyat bazında tek dosyada yönetin.', en: 'Manage transport orders, parties, cargo data and evidence documents in one shipment file.' },
+    outcome: { tr: 'Çıkış öncesi belge eksiklerini görün, paylaşımı kontrol edin ve operasyon istisnalarını hızla kapatın.', en: 'See missing documents before departure, control sharing and resolve operational exceptions faster.' },
+    features: { tr: ['Sevkiyat ve taraf kayıtları', 'Sürümlü belge merkezi', 'İstisna ve paylaşım portalı'], en: ['Shipment and party records', 'Versioned document center', 'Exception and sharing portal'] },
+  },
+  {
+    id: 'odivon-kids', name: 'OdivonKids', symbol: 'kids', status: 'development',
+    category: { tr: 'Kreş ve gündüz bakım', en: 'Childcare management' }, audience: { tr: 'Kreşler, anaokulları, öğretmenler ve veliler için', en: 'For nurseries, preschools, teachers and parents' },
+    description: { tr: 'Yoklama, günlük akış, veli iletişimi, ödeme ve izin kayıtlarını güvenli tek merkezde toplayın.', en: 'Bring attendance, daily updates, parent communication, payments and permissions into one secure hub.' },
+    outcome: { tr: 'Ekibin idari yükünü azaltırken ailelere çocuklarının günü hakkında güven veren bir görünürlük sunun.', en: 'Reduce administrative workload while giving families reassuring visibility into their child’s day.' },
+    features: { tr: ['Öğrenci, veli ve teslim yetkisi', 'Yoklama ve günlük akış', 'Duyuru, izin ve ücret takibi'], en: ['Student, parent and pickup permissions', 'Attendance and daily timeline', 'Announcements, permissions and fees'] },
+  },
+  {
+    id: 'odivon-cyber-ready', name: 'OdivonCyberReady', symbol: 'cyber', status: 'development',
+    category: { tr: 'Ürün siber güvenliği', en: 'Product cybersecurity' }, audience: { tr: 'Bağlantılı ürün üreticileri ve yazılım ekipleri için', en: 'For connected-product manufacturers and software teams' },
+    description: { tr: 'SBOM, zafiyet, risk ve düzeltme kayıtlarını ürün sürümleriyle ilişkilendiren denetlenebilir bir güvenlik dosyası kurun.', en: 'Build an auditable security file linking SBOMs, vulnerabilities, risks and remediation to product versions.' },
+    outcome: { tr: 'Açıkların etkisini daha hızlı değerlendirin, sorumluları netleştirin ve güvenlik kanıtını ürün yaşam döngüsünde koruyun.', en: 'Assess impact faster, clarify ownership and preserve security evidence throughout the product lifecycle.' },
+    features: { tr: ['Ürün ve sürüm sicili', 'SBOM ve zafiyet yönetimi', 'Risk, düzeltme ve uyum kanıtı'], en: ['Product and version register', 'SBOM and vulnerability management', 'Risk, remediation and compliance evidence'] },
+  },
+  {
+    id: 'odivon-diet', name: 'OdivonDiet', symbol: 'diet', status: 'development',
+    category: { tr: 'Diyetisyen yönetimi', en: 'Dietitian management' }, audience: { tr: 'Diyetisyenler, beslenme klinikleri ve danışanlar için', en: 'For dietitians, nutrition clinics and clients' },
+    description: { tr: 'Danışan kabulü, ölçüm, beslenme planı, takip ve paket süreçlerini profesyonel tek çalışma alanında birleştirin.', en: 'Unify client intake, measurements, meal plans, follow-ups and packages in one professional workspace.' },
+    outcome: { tr: 'Plan hazırlama süresini azaltın, danışan ilerlemesini görünür kılın ve takip sürekliliğini artırın.', en: 'Reduce plan preparation time, make client progress visible and improve follow-up continuity.' },
+    features: { tr: ['Danışan dosyası ve onam', 'Ölçüm ve ilerleme grafikleri', 'Beslenme planı, randevu ve paket'], en: ['Client records and consent', 'Measurements and progress charts', 'Meal plans, appointments and packages'] },
   }
 ];

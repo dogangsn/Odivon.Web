@@ -2,14 +2,14 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { ArrowRight, ArrowUpRight, Check, Clock3, Receipt, Dumbbell, CalendarDays, Workflow, Sprout, Waves, Sparkles, CarFront, Gauge, CircleParking, Scissors, GraduationCap, Braces, Heart, PawPrint, PanelsTopLeft, X } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Check, Clock3, Receipt, Dumbbell, CalendarDays, Workflow, Sprout, Waves, Sparkles, CarFront, Gauge, CircleParking, Scissors, GraduationCap, Braces, Heart, PawPrint, PanelsTopLeft, Wind, Cog, Tags, ShieldCheck, Flame, Scale, Truck, Baby, ShieldAlert, Salad, X } from 'lucide-react';
 import { usePreferences } from '@/components/site-shell';
 import { products, type Product } from '@/lib/products';
 import { ui } from '@/lib/ui-messages';
 import { Dialog, DialogTrigger, DialogContent, DialogTitle, DialogClose } from '@/components/ui/dialog';
 import { useScrollReveal } from '@/lib/use-scroll-reveal';
 
-const icons = { invoice: Receipt, gym: Dumbbell, apm: CalendarDays, integration: Workflow, farm: Sprout, spa: Waves, beauty: Sparkles, rent: CarFront, driving: Gauge, parking: CircleParking, hair: Scissors, school: GraduationCap, api: Braces, together: Heart, vet: PawPrint, erp: PanelsTopLeft };
+const icons = { invoice: Receipt, gym: Dumbbell, apm: CalendarDays, integration: Workflow, farm: Sprout, spa: Waves, beauty: Sparkles, rent: CarFront, driving: Gauge, parking: CircleParking, hair: Scissors, school: GraduationCap, api: Braces, together: Heart, vet: PawPrint, erp: PanelsTopLeft, fgas: Wind, machine: Cog, food: Tags, safety: ShieldCheck, fire: Flame, fair: Scale, cargo: Truck, kids: Baby, cyber: ShieldAlert, diet: Salad };
 type Filter = 'all' | 'available' | 'upcoming';
 
 function ProductCard({ product, index }: { product: Product; index: number }) {
