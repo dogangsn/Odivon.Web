@@ -22,11 +22,22 @@ npm run build
 
 - `/`: company website.
 - `/urunler`: product cards, details dialogs and optional external demo links.
+- `/gizlilik-politikasi`, `/kullanim-sartlari`: privacy policy (KVKK) and terms of use.
 - `lib/products.ts`: the 12 founder-supplied product names. Add future products to this catalogue and supply verified bilingual descriptions, scope and `demoUrl` values.
 - `lib/messages.ts` and `lib/ui-messages.ts`: Turkish and English content.
 - `components/site-shell.tsx`: shared navigation, language selector and light/dark appearance.
 
 Product readiness, detailed capabilities and demo URLs have not yet been supplied. No live demo endpoints are fabricated. Language and appearance preferences are stored in the visitor's browser.
+
+## SEO, analytics and legal pages
+
+- `lib/site.ts`: canonical URL, Google Analytics 4 ID and company details for the legal pages. Fields marked TODO must be filled before launch.
+- `lib/page-meta.ts`: title and description per route (Turkish in the HTML, English after the visitor switches language).
+- `robots.txt`, `sitemap.xml` and `llms.txt` are generated into `public/` by `scripts/generate-seo-files.mjs` before every `dev`, `build` and `build:static`. Add new routes to `sitePages` in `lib/site.ts`.
+- `/gizlilik-politikasi` and `/kullanim-sartlari`: legal texts in `lib/legal-content.ts`. Have them reviewed by a lawyer.
+- Cookie banner (`components/cookie-consent.tsx`): Google Analytics loads only after the visitor accepts analytics. Visitors can change their choice from the footer.
+- `app/not-found.tsx`: custom 404 page, exported as `404.html`.
+- `npm run check:links` checks internal links, anchors, the sitemap and external links in `dist/client` (`-- --offline` skips external URLs).
 
 ## Vercel deployment
 
