@@ -1,0 +1,71 @@
+/* Header CTA, footer legal links, cookie banner, legal pages and 404. */
+.header-cta{display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 16px;border-radius:12px;background:var(--button-bg);color:#170e2e;font-size:14px;font-weight:650;white-space:nowrap;transition:transform .2s,background .2s}
+html[data-theme=light] .header-cta{color:#fff}
+.header-cta:hover{transform:translateY(-2px)}
+.header-cta:focus-visible,.cookie-button:focus-visible,.footer-legal button:focus-visible{outline:2px solid var(--primary);outline-offset:3px}
+
+.footer-legal{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px}
+.footer-legal a,.footer-legal button{font:inherit;font-size:12px;color:var(--muted);background:none;border:0;padding:0;cursor:pointer}
+.footer-legal a:hover,.footer-legal button:hover{color:var(--primary);text-decoration:underline}
+
+.portfolio-end .portfolio-end-actions{grid-column:2;grid-row:2/4;display:flex;flex-direction:column;gap:12px;align-items:stretch}
+.portfolio-end .portfolio-end-actions a{grid-column:auto;grid-row:auto}
+.portfolio-end .portfolio-end-actions .button{background:#1f1535;color:#fff;border-color:#1f1535;border-radius:999px;box-shadow:none}
+.portfolio-end .portfolio-end-actions .button:hover{background:#34245a}
+
+.cookie-banner{position:fixed;z-index:60;left:24px;bottom:24px;width:min(440px,calc(100% - 48px));padding:22px;border-radius:18px;background:var(--surface);color:var(--foreground);border:1px solid var(--border);box-shadow:0 24px 70px #0007;display:grid;gap:16px;animation:cookie-in .35s ease-out}
+.cookie-banner h2{margin:0 0 6px;font-size:17px;letter-spacing:-.3px}
+.cookie-banner p{margin:0;font-size:13.5px;line-height:1.6;color:var(--muted)}
+.cookie-banner p a{color:var(--primary);text-decoration:underline;text-underline-offset:3px}
+.cookie-options{display:grid;gap:10px}
+.cookie-option{display:flex;gap:12px;align-items:flex-start;padding:12px;border:1px solid var(--border);border-radius:12px;background:var(--subtle);font-size:13px;line-height:1.5;color:var(--muted);cursor:pointer}
+.cookie-option input{margin-top:3px;width:18px;height:18px;accent-color:var(--primary);flex-shrink:0}
+.cookie-option b{display:block;color:var(--foreground);font-size:14px}
+.cookie-option small{font-weight:500;color:var(--primary);margin-left:6px}
+.cookie-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.cookie-button{min-height:44px;padding:8px 10px;border-radius:12px;border:1px solid var(--primary);background:var(--button-bg);color:#170e2e;font:inherit;font-size:13px;font-weight:650;cursor:pointer;transition:filter .2s}
+html[data-theme=light] .cookie-button{color:#fff}
+.cookie-button:hover{filter:brightness(1.08)}
+.cookie-button-ghost,html[data-theme=light] .cookie-button-ghost{background:transparent;color:var(--foreground);border-color:var(--border)}
+@keyframes cookie-in{from{opacity:0;transform:translateY(16px)}}
+
+.legal-page{padding-block:48px 110px}
+.legal-hero{max-width:860px;padding-block:36px 46px;border-bottom:1px solid var(--border)}
+.legal-hero h1{font-size:clamp(38px,5.4vw,72px);line-height:1.05;letter-spacing:-2.6px;font-weight:600;margin:18px 0}
+.legal-hero p{font-size:17px;line-height:1.7;color:var(--muted);margin:0 0 16px}
+.legal-hero small{font-size:12px;letter-spacing:.5px;color:var(--primary)}
+.legal-layout{display:grid;grid-template-columns:280px minmax(0,1fr);gap:60px;padding-top:46px}
+.legal-toc{position:sticky;top:30px;align-self:start}
+.legal-toc ol{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.legal-toc a{display:block;padding:8px 12px;border-radius:10px;font-size:13.5px;color:var(--muted)}
+.legal-toc a:hover{background:var(--surface);color:var(--foreground)}
+.legal-body{max-width:760px}
+.legal-body section{scroll-margin-top:30px;padding-bottom:30px}
+.legal-body h2{font-size:22px;letter-spacing:-.5px;margin:0 0 12px}
+.legal-body p,.legal-body li{font-size:15.5px;line-height:1.75;color:var(--muted);overflow-wrap:anywhere}
+.legal-body p{margin:0 0 12px}
+.legal-body ul{margin:0 0 12px;padding-left:20px;display:grid;gap:6px}
+.legal-body li::marker{color:var(--primary)}
+
+.not-found{position:relative;min-height:62vh;padding-block:90px 110px;overflow:hidden}
+.not-found-code{position:absolute;right:0;top:20px;font-size:clamp(140px,26vw,360px);font-weight:700;letter-spacing:-12px;line-height:1;color:transparent;-webkit-text-stroke:1px var(--primary);opacity:.35;pointer-events:none}
+.not-found h1{position:relative;font-size:clamp(42px,6.4vw,92px);line-height:1.02;letter-spacing:-3.5px;font-weight:600;max-width:820px;margin:20px 0}
+.not-found p{position:relative;max-width:520px;font-size:17px;line-height:1.7;color:var(--muted);margin:0}
+.not-found-report{display:inline-block;margin-top:40px;font-size:13px;color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+.not-found-report:hover{color:var(--primary)}
+
+@media(max-width:1100px){.header-cta{display:none}.legal-layout{grid-template-columns:1fr;gap:28px}.legal-toc{position:static}.legal-toc ol{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){
+  .header-cta{display:none}
+  .portfolio-end .portfolio-end-actions{margin-top:25px}
+  .portfolio-end .portfolio-end-actions a{margin-top:0;width:100%}
+  .cookie-banner{left:12px;right:12px;bottom:12px;width:auto;padding:18px}
+  .cookie-actions{grid-template-columns:1fr 1fr}
+  .cookie-actions .cookie-button:first-child{grid-column:1/-1}
+  .legal-page{padding-block:28px 80px}
+  .legal-hero h1{letter-spacing:-1.6px}
+  .legal-toc ol{grid-template-columns:1fr}
+  .not-found{padding-block:60px 80px}
+  .not-found .hero-actions{flex-wrap:wrap;gap:20px}
+}
+@media(prefers-reduced-motion:reduce){.cookie-banner{animation:none}}
