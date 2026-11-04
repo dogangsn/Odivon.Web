@@ -1,0 +1,5 @@
+# Odivon - https://odivon.com
+User-agent: *
+Allow: /
+
+Sitemap: https://odivon.com/sitemap.xml

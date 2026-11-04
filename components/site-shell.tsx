@@ -1,5 +1,5 @@
 'use client';
-import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
+import { createContext, useContext, useEffect, useRef, useState, type ReactNode } from 'react';
 
 import { usePathname } from 'next/navigation';
 import { Globe2, Sun, Moon, ChevronDown, ArrowUpRight } from 'lucide-react';
@@ -16,7 +16,9 @@ export function SiteShell({children}:{children:ReactNode}) {
  const pathname=usePathname();
  const t=messages[locale], u=ui[locale];
  useEffect(()=>{try {const l=localStorage.getItem('odivon-language');if(l==='tr'||l==='en')setLocale(l);}catch{} setTheme(document.documentElement.dataset.theme==='light'?'light':'dark');},[]);
- useEffect(()=>{document.documentElement.lang=locale;document.title=pathname==='/urunler'?`${t.products} — Odivon`:t.title;document.querySelector('meta[name="description"]')?.setAttribute('content',pathname==='/urunler'?u.catalogueText:t.description);},[locale,pathname,t,u]);
+ // Turkish title and description come from each page's server metadata (what search engines index); English swaps them in the browser only.
+ const turkishHead=useRef<Record<string,{title:string,description:string}>>({});
+ useEffect(()=>{document.documentElement.lang=locale;const meta=document.querySelector('meta[name="description"]');const saved=turkishHead.current[pathname]??(turkishHead.current[pathname]={title:document.title,description:meta?.getAttribute('content')??''});if(locale==='tr'){document.title=saved.title;meta?.setAttribute('content',saved.description);return;}document.title=pathname==='/urunler'?`${t.products} — Odivon`:t.title;meta?.setAttribute('content',pathname==='/urunler'?u.catalogueText:t.description);},[locale,pathname,t,u]);
  function chooseLocale(v:unknown){if(v!=='tr'&&v!=='en')return;setLocale(v);try{localStorage.setItem('odivon-language',v);}catch{}}
  function chooseTheme(v:unknown){if(v!=='light'&&v!=='dark')return;setTheme(v);document.documentElement.dataset.theme=v;try{localStorage.setItem('odivon-theme',v);}catch{}}
  const brand=<a href="/" className="brand" aria-label={t.home}><span className="brand-symbol" aria-hidden="true"/>odivon<span className="brand-dot" aria-hidden="true">.</span></a>;
