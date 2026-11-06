@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import Link from '@/components/plain-link';
 import type { CSSProperties } from 'react';
 import { ArrowUpRight, ArrowDown, ArrowRight, Focus, Layers3, MoveUpRight, Mail } from 'lucide-react';
 import { usePreferences } from '@/components/site-shell';
@@ -37,7 +37,7 @@ export default function Home() {
       <div className="hero-art">
         <div className="hero-art-frame" aria-hidden="true"><img src="/odivon-violet-loop.png" alt="" /></div>
         <span className="hero-art-label" aria-hidden="true">ODIVON / PRODUCT UNIVERSE</span>
-        {orbitProducts.map((product, index) => <Link key={product.id} href={`/urunler#${product.id}`} className={`orbit-product orbit-product-${index + 1}`}>
+        {orbitProducts.map((product, index) => <Link key={product.id} href={`/urunler/${product.id}`} className={`orbit-product orbit-product-${index + 1}`}>
           <span className="orbit-product-dot" /><span><b>{product.name}</b><small>{product.category[locale]}</small></span><ArrowUpRight size={15} />
         </Link>)}
       </div>
@@ -53,7 +53,7 @@ export default function Home() {
     </section>
     <section className="home-products wrap">
       <div className="home-products-heading" data-reveal><div><span className="section-label">{t.productLabel}</span><h2>{u.catalogueLink}</h2><p>{t.productIntro}</p></div><Link className="text-link" href="/urunler">{u.allProducts}<ArrowUpRight size={19} /></Link></div>
-      <div className="home-product-grid">{selected.map((product, index) => <Link className="home-product" href={`/urunler#${product.id}`} key={product.id} data-product={product.symbol} data-reveal style={{ '--reveal-delay': `${index * 110}ms` } as CSSProperties}><span className="home-product-number">0{index + 1} / {product.category[locale]}</span><h3>{product.name}</h3><p>{product.description[locale]}</p><span className="home-product-link">{u.details}<ArrowUpRight size={18} /></span></Link>)}</div>
+      <div className="home-product-grid">{selected.map((product, index) => <Link className="home-product" href={`/urunler/${product.id}`} key={product.id} data-product={product.symbol} data-reveal style={{ '--reveal-delay': `${index * 110}ms` } as CSSProperties}><span className="home-product-number">0{index + 1} / {product.category[locale]}</span><h3>{product.name}</h3><p>{product.description[locale]}</p><span className="home-product-link">{u.details}<ArrowUpRight size={18} /></span></Link>)}</div>
     </section>
     <section id="yaklasim" className="approach wrap">
       <div className="section-label" data-reveal>{t.approachLabel}</div>

@@ -69,3 +69,27 @@ html[data-theme=light] .cookie-button{color:#fff}
   .not-found .hero-actions{flex-wrap:wrap;gap:20px}
 }
 @media(prefers-reduced-motion:reduce){.cookie-banner{animation:none}}
+
+/* Product landing pages (/urunler/[slug]) */
+.product-page{padding-block:40px 100px}
+.product-page-hero{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:50px;align-items:center;padding-block:40px 60px;border-bottom:1px solid var(--border)}
+.product-page-hero h1{font-size:clamp(44px,6.4vw,92px);line-height:1;letter-spacing:-3.5px;font-weight:650;margin:20px 0 12px;overflow-wrap:anywhere}
+.product-page-keyword{font-size:clamp(19px,2vw,26px);font-weight:550;color:var(--primary);margin:0 0 14px;letter-spacing:-.4px}
+.product-page-audience{font-size:14px;color:var(--foreground);margin:0 0 14px;font-weight:600}
+.product-page-lead{max-width:620px;font-size:17px;line-height:1.7;color:var(--muted);margin:0}
+.product-page-hero .hero-actions{flex-wrap:wrap}
+.product-page-mark{position:relative;aspect-ratio:1;max-width:380px;width:100%;justify-self:end;display:grid;place-items:center;border-radius:28px;border:1px solid var(--border);background:linear-gradient(145deg,var(--surface),var(--subtle));color:var(--primary);overflow:hidden}
+.product-page-body{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding-block:60px;align-items:start}
+.product-page-body h2{font-size:24px;letter-spacing:-.6px;margin:0 0 16px}
+.product-page-related{padding-top:40px;border-top:1px solid var(--border)}
+.product-page-related .home-products-heading h2{margin:0}
+.showcase-copy h2 a:hover{color:var(--primary)}
+.dialog-page-link{display:inline-flex;align-items:center;gap:8px;margin:4px 0 14px;font-size:14px;font-weight:650;color:var(--primary)}
+.dialog-page-link:hover{text-decoration:underline}
+@media(max-width:1100px){.product-page-related .home-product-grid{grid-template-columns:1fr}}
+@media(max-width:760px){
+  .product-page-hero{grid-template-columns:1fr;gap:30px;padding-block:24px 40px}
+  .product-page-hero h1{letter-spacing:-2px}
+  .product-page-mark{display:none}
+  .product-page-body{grid-template-columns:1fr;gap:28px;padding-block:40px}
+}

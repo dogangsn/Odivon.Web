@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import Link from '@/components/plain-link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { usePreferences } from '@/components/site-shell';
 import { site } from '@/lib/site';

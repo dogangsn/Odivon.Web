@@ -25,7 +25,8 @@ writeFileSync(out('robots.txt'), [
   '',
 ].join('\n'));
 
-const urls = sitePages.map(page => [
+const productPages = products.map(p => ({ path: `/urunler/${p.id}`, priority: p.status === 'available' ? 0.8 : 0.5, changefreq: 'monthly' }));
+const urls = [...sitePages, ...productPages].map(page => [
   '  <url>',
   `    <loc>${abs(page.path)}</loc>`,
   `    <lastmod>${today}</lastmod>`,
@@ -35,7 +36,8 @@ const urls = sitePages.map(page => [
 ].join('\n'));
 writeFileSync(out('sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`);
 
-const link = p => p.demoUrl ?? `${site.url}/urunler#${p.id}`;
+const page = p => `${site.url}/urunler/${p.id}`;
+const link = p => p.demoUrl ?? page(p);
 const line = p => `- [${p.name}](${link(p)}): ${p.description.en} (${p.category.en}; ${p.audience.en.replace(/^For /, 'for ')})`;
 const lineTr = p => `- [${p.name}](${link(p)}): ${p.category.tr}. ${p.description.tr} Öne çıkanlar: ${p.features.tr.join(', ')}.`;
 const available = products.filter(p => p.status === 'available');
@@ -49,7 +51,7 @@ writeFileSync(out('llms.txt'), [
   '',
   '## Which Odivon product fits which need',
   '',
-  ...available.map(p => `- ${p.audience.en}: ${p.name} (${link(p)})`),
+  ...available.map(p => `- ${p.audience.en}: ${p.name}, product page ${page(p)}, live app ${link(p)}`),
   '',
   '## Pages',
   '',
@@ -71,4 +73,4 @@ writeFileSync(out('llms.txt'), [
   '',
 ].join('\n'));
 
-console.log(`SEO files written: robots.txt, sitemap.xml (${sitePages.length} URLs), llms.txt (${products.length} products)`);
+console.log(`SEO files written: robots.txt, sitemap.xml (${sitePages.length + productPages.length} URLs), llms.txt (${products.length} products)`);

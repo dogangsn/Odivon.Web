@@ -27,10 +27,10 @@ export const site = {
 } as const;
 
 // Pages listed in sitemap.xml. Keep this in sync with app/ routes.
-export const sitePages = [
+export const sitePages: readonly { path: string; priority: number; changefreq: string }[] = [
   { path: '/', priority: 1.0, changefreq: 'weekly' },
   { path: '/urunler', priority: 0.9, changefreq: 'weekly' },
   { path: '/gizlilik-politikasi', priority: 0.3, changefreq: 'yearly' },
   { path: '/kullanim-sartlari', priority: 0.3, changefreq: 'yearly' },
-] as const;
+];
 export const SITE_URL = site.url;

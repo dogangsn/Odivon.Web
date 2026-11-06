@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import Link from '@/components/plain-link';
 import { useEffect, useState, useSyncExternalStore } from 'react';
 import { consentMessages } from '@/lib/consent-messages';
 import type { Locale } from '@/lib/messages';

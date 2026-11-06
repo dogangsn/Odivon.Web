@@ -9,7 +9,7 @@ const root = 'dist/client';
 const offline = process.argv.includes('--offline');
 if (!existsSync(root)) throw new Error('Run `npm run build:static` first.');
 
-const pages = readdirSync(root).filter(file => file.endsWith('.html') && !/^yandex_/.test(file));
+const pages = readdirSync(root, { recursive: true }).map(String).filter(file => file.endsWith('.html') && !file.startsWith('yandex_') && !file.startsWith('_next'));
 const fileFor = path => {
   const clean = path.replace(/\/$/, '') || '/index';
   const candidates = [`${clean}.html`, `${clean}/index.html`, clean];

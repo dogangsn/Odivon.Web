@@ -1,14 +1,16 @@
 'use client';
 import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
 
-import Link from 'next/link';
+import Link from '@/components/plain-link';
 import { usePathname } from 'next/navigation';
 import { Globe2, Sun, Moon, ChevronDown, ArrowUpRight } from 'lucide-react';
 import { messages, type Locale } from '@/lib/messages';
 import { ui } from '@/lib/ui-messages';
 import { CookieConsent, openCookieSettings } from '@/components/cookie-consent';
 import { consentMessages, shellMessages } from '@/lib/consent-messages';
-import { notFoundMeta, pageMeta } from '@/lib/page-meta';
+import { metaFor } from '@/lib/page-meta';
+import { productKeywords } from '@/lib/product-seo';
+import { products } from '@/lib/products';
 import { site } from '@/lib/site';
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuRadioItem } from '@/components/ui/dropdown-menu';
 
@@ -22,7 +24,7 @@ export function SiteShell({children}:{children:ReactNode}) {
  const t=messages[locale], u=ui[locale], s=shellMessages[locale];
  const mailto=`mailto:${site.email}?subject=${encodeURIComponent(s.mailSubject)}`;
  useEffect(()=>{try {const l=localStorage.getItem('odivon-language');if(l==='tr'||l==='en')setLocale(l);}catch{} setTheme(document.documentElement.dataset.theme==='light'?'light':'dark');},[]);
- useEffect(()=>{document.documentElement.lang=locale;const path=pathname.replace(/\/$/,'')||'/';const meta=(pageMeta[path]??notFoundMeta)[locale];document.title=meta.title;document.querySelector('meta[name="description"]')?.setAttribute('content',meta.description);},[locale,pathname]);
+ useEffect(()=>{document.documentElement.lang=locale;const path=pathname.replace(/\/$/,'')||'/';const meta=metaFor(path,locale,products,productKeywords);document.title=meta.title;document.querySelector('meta[name="description"]')?.setAttribute('content',meta.description);},[locale,pathname]);
  function chooseLocale(v:unknown){if(v!=='tr'&&v!=='en')return;setLocale(v);try{localStorage.setItem('odivon-language',v);}catch{}}
  function chooseTheme(v:unknown){if(v!=='light'&&v!=='dark')return;setTheme(v);document.documentElement.dataset.theme=v;try{localStorage.setItem('odivon-theme',v);}catch{}}
  const brand=<a href="/" className="brand" aria-label={t.home}><span className="brand-symbol" aria-hidden="true"/>odivon<span className="brand-dot" aria-hidden="true">.</span></a>;

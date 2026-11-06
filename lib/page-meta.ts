@@ -51,3 +51,11 @@ export const notFoundMeta: Record<Locale, PageMeta> = {
   tr: { title: 'Sayfa bulunamadı — Odivon', description: 'Aradığınız sayfa taşınmış ya da hiç var olmamış olabilir.' },
   en: { title: 'Page not found — Odivon', description: 'The page you are looking for may have moved or never existed.' },
 };
+
+// Title and description for any route, including product pages.
+export function metaFor(path: string, locale: Locale, catalogue: { id: string; name: string; description: Record<Locale, string>; category: Record<Locale, string> }[], keywords: Record<string, Record<Locale, string>>): PageMeta {
+  if (pageMeta[path]) return pageMeta[path][locale];
+  const product = path.startsWith('/urunler/') ? catalogue.find(p => p.id === path.slice('/urunler/'.length)) : undefined;
+  if (!product) return notFoundMeta[locale];
+  return { title: `${product.name}: ${keywords[product.id]?.[locale] ?? product.category[locale]} | Odivon`, description: product.description[locale] };
+}

@@ -1,0 +1,4 @@
+import { Receipt, Dumbbell, CalendarDays, Workflow, Sprout, Waves, Sparkles, CarFront, Gauge, CircleParking, Scissors, GraduationCap, Braces, Heart, PawPrint, PanelsTopLeft, Wind, Cog, Tags, ShieldCheck, Flame, Scale, Truck, Baby, ShieldAlert, Salad } from 'lucide-react';
+import type { Product } from './products';
+
+export const productIcons: Record<Product['symbol'], typeof Receipt> = { invoice: Receipt, gym: Dumbbell, apm: CalendarDays, integration: Workflow, farm: Sprout, spa: Waves, beauty: Sparkles, rent: CarFront, driving: Gauge, parking: CircleParking, hair: Scissors, school: GraduationCap, api: Braces, together: Heart, vet: PawPrint, erp: PanelsTopLeft, fgas: Wind, machine: Cog, food: Tags, safety: ShieldCheck, fire: Flame, fair: Scale, cargo: Truck, kids: Baby, cyber: ShieldAlert, diet: Salad };
