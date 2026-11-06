@@ -1,0 +1,90 @@
+# Odivon
+
+> Odivon builds ready-to-use cloud software for hair salons, gyms, veterinary clinics, car rental, driving schools, parking, invoicing and ERP. Each product is a separate web application with a live demo. Turkish is the primary language; English is available.
+
+Odivon builds independent, ready-to-use cloud (SaaS) products for specific industries, primarily for businesses in Türkiye. Contact: info@odivon.com. Website: https://odivon.com
+
+## Which Odivon product fits which need
+
+- For teams using multiple Odivon products: OdivonERP, product page https://odivon.com/urunler/odivon-erp, live app https://erp.odivon.com
+- For gyms, studios and coaches: OdivonGYM, product page https://odivon.com/urunler/odivon-gym, live app https://gym.odivon.com
+- For businesses managing invoices and pro formas: OdivonFaturaPro, product page https://odivon.com/urunler/odivon-fatura-pro, live app https://faturapro.odivon.com
+- For veterinary clinics and clinicians: OdivonVET, product page https://odivon.com/urunler/odivon-vet, live app https://vet.odivon.com
+- For sheep and goat farms: OdivonFARM, product page https://odivon.com/urunler/odivon-farm, live app https://farm.odivon.com
+- For spas and wellness businesses: OdivonSPA, product page https://odivon.com/urunler/odivon-spa, live app https://spa.odivon.com
+- For beauty centers, wellness studios and multi-branch teams: OdivonProBeauty, product page https://odivon.com/urunler/odivon-pro-beauty, live app https://beauty.odivon.com
+- For rental companies and vehicle preparation / car wash teams: OdivonRentACar, product page https://odivon.com/urunler/odivon-rent-a-car, live app https://rent.odivon.com
+- For driving schools, instructors and operations teams: OdivonDrivingSchool, product page https://odivon.com/urunler/odivon-driving-school, live app https://driving.odivon.com
+- For parking operators, facility managers and field teams: OdivonPark, product page https://odivon.com/urunler/odivon-park, live app https://park.odivon.com
+- For hair salons, salon owners and multi-branch teams: OdivonPro Hair, product page https://odivon.com/urunler/odivon-pro-hair, live app https://hair.odivon.com
+- For appointment-based teams: OdivonAPM, product page https://odivon.com/urunler/odivon-apm, live app https://apm.odivon.com
+- For primary, LGS, YKS and KPSS learners: OdivonSchool, product page https://odivon.com/urunler/odivon-school, live app https://school.odivon.com
+- For application teams: OdivonAPI, product page https://odivon.com/urunler/odivon-api, live app https://api.odivon.com
+- For travel teams using SAMO: OdivonSamoInt, product page https://odivon.com/urunler/odivon-samo-int, live app https://samo.odivon.com
+- For couples who want to discover more together: Odivon ikimiz, product page https://odivon.com/urunler/odivon-ikimiz, live app https://ikimiz.odivon.com
+- For refrigeration, HVAC and heat-pump service companies: OdivonF-Gas, product page https://odivon.com/urunler/odivon-fgas, live app https://fgas.odivon.com
+- For food manufacturers, private labels and quality teams: OdivonFoodLabel, product page https://odivon.com/urunler/odivon-food-label, live app https://foodlabel.odivon.com
+- For fire-safety companies, facilities and field teams: OdivonFireSafe, product page https://odivon.com/urunler/odivon-fire-safe, live app https://firesafe.odivon.com
+
+## Pages
+
+- [Odivon — Cloud software products for businesses](https://odivon.com/): Odivon builds ready-to-use cloud software for hair salons, gyms, veterinary clinics, car rental, driving schools, parking, invoicing and ERP.
+- [Products — Odivon cloud software](https://odivon.com/urunler): OdivonERP, OdivonGYM, OdivonFaturaPro, OdivonVET and more. Explore the Odivon product family and try the live applications.
+- [Privacy Policy — Odivon](https://odivon.com/gizlilik-politikasi): Learn which personal data the Odivon website processes, why, how cookies are used and what your rights are.
+- [Terms of Use — Odivon](https://odivon.com/kullanim-sartlari): The terms that apply when you use the Odivon website and product demos.
+
+## Available products
+
+- [OdivonERP](https://erp.odivon.com): An enterprise portal for accessing licensed Odivon applications from one session. (Enterprise platform; for teams using multiple Odivon products)
+- [OdivonGYM](https://gym.odivon.com): Bring athlete progress, training performance and club operations into one experience. (Fitness & performance; for gyms, studios and coaches)
+- [OdivonFaturaPro](https://faturapro.odivon.com): Choose your country, create invoices and pro formas, and download PDFs. Keep customers, expenses and reports in one workspace. (Invoicing & finance; for businesses managing invoices and pro formas)
+- [OdivonVET](https://vet.odivon.com): Keep patient, vaccination, examination and appointment records in one place. (Veterinary clinics; for veterinary clinics and clinicians)
+- [OdivonFARM](https://farm.odivon.com): Track herd records, RFID counts, health and costs from one screen. (Agriculture & livestock; for sheep and goat farms)
+- [OdivonSPA](https://spa.odivon.com): Manage appointments, clients, sessions and finances in one workspace. (Service businesses; for spas and wellness businesses)
+- [OdivonProBeauty](https://beauty.odivon.com): Run the daily flow of your beauty center in one place, from appointments and treatments to customer relationships and payments. Keep every branch coordinated while focusing on service. (Beauty center management; for beauty centers, wellness studios and multi-branch teams)
+- [OdivonRentACar](https://rent.odivon.com): Bring fleet availability, bookings and rentals into one workspace. Track pre-handover maintenance and wash preparation with customer follow-up tasks. (Car rental & fleet; for rental companies and vehicle preparation / car wash teams)
+- [OdivonDrivingSchool](https://driving.odivon.com): Manage student records, instructors, training vehicles and driving lessons from one operations center. Make the daily schedule clearer for the entire team. (Driving school management; for driving schools, instructors and operations teams)
+- [OdivonPark](https://park.odivon.com): Manage occupancy, vehicle entry and exit, pricing and payments from one control point. Make real-time operations across multiple facilities secure and measurable. (Smart parking management; for parking operators, facility managers and field teams)
+- [OdivonPro Hair](https://hair.odivon.com): From appointments to checkout, colour formulas to staff commissions, everything your salon runs on in one place. Leave the notebooks and spreadsheets behind and give your team one screen. (Hair salon management; for hair salons, salon owners and multi-branch teams)
+- [OdivonAPM](https://apm.odivon.com): Organize appointments and daily schedules in one workspace. (Appointment management; for appointment-based teams)
+- [OdivonSchool](https://school.odivon.com): Study with exam-specific tests, explanatory solutions and progress tracking. (Education; for primary, LGS, YKS and KPSS learners)
+- [OdivonAPI](https://api.odivon.com): Explore APIs for health, economy and location data in one catalogue. (Developer tools; for application teams)
+- [OdivonSamoInt](https://samo.odivon.com): Connect SAMO data to customer-facing apps or B2B booking flows. (Travel technology; for travel teams using SAMO)
+- [Odivon ikimiz](https://ikimiz.odivon.com): Bring new energy to your routine with shared matches, daily prompts and date ideas. (Lifestyle & relationships; for couples who want to discover more together)
+- [OdivonF-Gas](https://fgas.odivon.com): Manage equipment, refrigerant movements, leak checks and technician evidence in one audit-ready flow. (F-gas compliance; for refrigeration, HVAC and heat-pump service companies)
+- [OdivonFoodLabel](https://foodlabel.odivon.com): Validate recipes, allergens, nutrition values and mandatory statements in one product record before print. (Food label management; for food manufacturers, private labels and quality teams)
+- [OdivonFireSafe](https://firesafe.odivon.com): Track periodic maintenance for extinguishers, cabinets and alarms with a QR-assisted field workflow. (Fire safety operations; for fire-safety companies, facilities and field teams)
+
+## In development
+
+- [OdivonMachineCE](https://odivon.com/urunler/odivon-machine-ce): Manage the CE technical file as a living process, from risk assessment through declaration of conformity. (Machinery compliance; for machinery manufacturers, integrators and technical consultants)
+- [OdivonProductSafe](https://odivon.com/urunler/odivon-product-safe): Connect product identity, economic operators, risk evidence and incident records to sales channels. (Product safety; for manufacturers, importers and online sellers)
+- [OdivonPayFair](https://odivon.com/urunler/odivon-pay-fair): Make equivalent-work groups, pay gaps and remediation actions visible in a controlled analytics workspace. (Pay transparency; for HR, compensation and leadership teams)
+- [OdivonCargoDocs](https://odivon.com/urunler/odivon-cargo-docs): Manage transport orders, parties, cargo data and evidence documents in one shipment file. (Digital freight documents; for carriers, logistics operators and cargo owners)
+- [OdivonKids](https://odivon.com/urunler/odivon-kids): Bring attendance, daily updates, parent communication, payments and permissions into one secure hub. (Childcare management; for nurseries, preschools, teachers and parents)
+- [OdivonCyberReady](https://odivon.com/urunler/odivon-cyber-ready): Build an auditable security file linking SBOMs, vulnerabilities, risks and remediation to product versions. (Product cybersecurity; for connected-product manufacturers and software teams)
+- [OdivonDiet](https://odivon.com/urunler/odivon-diet): Unify client intake, measurements, meal plans, follow-ups and packages in one professional workspace. (Dietitian management; for dietitians, nutrition clinics and clients)
+
+## Türkçe özet
+
+Odivon; kuaför, spor salonu, veteriner, rent a car, sürücü kursu, otopark, e-fatura ve ERP gibi alanlarda işletmelerin kullanıma hazır bulut yazılımlarını geliştirir. Her ürün kendi demosuyla ayrı bir web uygulamasıdır. İletişim: info@odivon.com
+
+- [OdivonERP](https://erp.odivon.com): Kurumsal platform. Lisanslı Odivon uygulamalarına tek oturumdan ulaşmak için geliştirilen kurumsal ürün portalı. Öne çıkanlar: Lisanslı modülleri tek panoda görme, Ürünler arası tek oturumla geçiş, Şirket seçimi ve hesap akışı.
+- [OdivonGYM](https://gym.odivon.com): Spor & performans. Sporcu gelişimini, antrenman performansını ve kulüp operasyonlarını aynı deneyimde buluşturun. Öne çıkanlar: Sporcu ve kulüp yönetimi, Antrenman ve performans takibi, Bireysel ve grup seansları için akışlar.
+- [OdivonFaturaPro](https://faturapro.odivon.com): Fatura & finans. Ülkenizi seçin; fatura ve proformaları hazırlayıp PDF olarak indirin. Müşteri, gider ve raporlarınızı aynı çalışma alanında takip edin. Öne çıkanlar: Ülke seçimiyle fatura ve proforma oluşturma, Faturaları PDF olarak indirme, Müşteri, gider ve rapor takibi.
+- [OdivonVET](https://vet.odivon.com): Veteriner klinikleri. Hasta, aşı, muayene ve randevu kayıtlarını klinik ekibiniz için aynı yerde toplayın. Öne çıkanlar: Hasta ve aşı kayıtları, Muayene ve laboratuvar takibi, Randevu, finans ve stok görünümü.
+- [OdivonFARM](https://farm.odivon.com): Tarım & hayvancılık. Sürü kayıtlarını, RFID sayımını, sağlık ve maliyet verilerini tek ekranda takip edin. Öne çıkanlar: RFID küpe ve canlı sayım, Ağırlık, döl verimi ve sağlık takibi, Rasyon ve maliyet görünümü.
+- [OdivonSPA](https://spa.odivon.com): Hizmet işletmeleri. Randevuları, müşterileri, seansları ve finansal hareketleri ortak bir çalışma alanında yönetin. Öne çıkanlar: Randevu planlama, Müşteri ve seans kayıtları, Finansal hareket görünümü.
+- [OdivonProBeauty](https://beauty.odivon.com): Güzellik merkezi yönetimi. Randevudan bakıma, müşteri ilişkisinden kasaya kadar güzellik merkezinizin günlük akışını tek yerde yönetin. Şubelerinizin ritmini kaybetmeden hizmet kalitesine odaklanın. Öne çıkanlar: Uzman, oda ve cihaz uygunluğuna göre randevu takvimi, Müşteri profilleri ve bakım geçmişi, Paketler, kalan seanslar ve hizmet kataloğu, Personel, şube ve vardiya yönetimi, Kasa, stok ve performans raporları, Randevu ve paketleri görüntüleyen müşteri portalı.
+- [OdivonRentACar](https://rent.odivon.com): Araç kiralama & filo. Filo, müsaitlik, rezervasyon ve kiralama süreçlerini tek çalışma alanında birleştirin. Araç teslimi öncesi bakım ve yıkama hazırlığını da müşteri takip görevleriyle görünür kılın. Öne çıkanlar: 14 günlük araç takvimi ve bakım görünümü, Şube ve tarih seçimiyle online araç rezervasyonu, Rezervasyonu kiralamaya dönüştürme ve teslim / iade takibi, Müşteri kayıtları ve CRM takip görevleri, Tahsilat, depozito ve iade hareketlerini izleme, Oto yıkama ve araç hazırlığı için takip görevleri.
+- [OdivonDrivingSchool](https://driving.odivon.com): Sürücü kursu yönetimi. Kursiyer kayıtlarını, eğitmenleri, eğitim araçlarını ve direksiyon derslerini tek operasyon merkezinde yönetin. Günlük planı herkes için daha açık ve düzenli hale getirin. Öne çıkanlar: Kursiyer kayıtları ve belge kontrolü, Eğitmen sertifikaları ve sınıf yetkinlikleri, Eğitim filosu, muayene ve sigorta tarihleri, Kursiyer, eğitmen ve araç için çakışma kontrollü ders planı, Yaklaşan dersler ve operasyon göstergeleri, Türkçe ve İngilizce yönetim deneyimi.
+- [OdivonPark](https://park.odivon.com): Akıllı otopark yönetimi. Doluluk, araç giriş–çıkışı, ücretlendirme ve tahsilat akışlarını tek kontrol noktasında yönetin. Birden fazla tesisin anlık durumunu güvenli ve ölçülebilir hale getirin. Öne çıkanlar: Canlı doluluk, giriş ve çıkış takibi, Plaka veya QR biletle park oturumu, Araç kategorilerine göre esnek tarifeler, Nakit ve harici POS tahsilatları ile kasa vardiyası, Tesis, alan, şerit ve kapasite yönetimi, Edge cihaz eşleştirme ve çevrimdışı olay kuyruğu.
+- [OdivonPro Hair](https://hair.odivon.com): Kuaför & salon yönetimi. Randevudan kasaya, boya formülünden personel primine kadar salonunuzun tüm işleri aynı yerde. Defter, ajanda ve hesap tablolarını bırakın; ekibiniz aynı ekrana baksın. Öne çıkanlar: Personel bazlı akıllı randevu takvimi, Instagram ve WhatsApp’a eklenebilen online randevu linki, Randevudan aktarılan hizmetlerle hızlı kasa (POS) ve bölünmüş ödeme, Müşteri kartında saklanan boya formülü arşivi, Kurala göre otomatik hesaplanan personel primleri, Şube bazlı yönetim, stok, paket ve ciro raporları.
+- [OdivonAPM](https://apm.odivon.com): Randevu yönetimi. Randevuları ve günlük takvim akışını tek bir çalışma alanında düzenleyin. Öne çıkanlar: Randevu oluşturma ve yönetimi, Günlük takvim görünümü, Düzenli planlama akışı.
+- [OdivonSchool](https://school.odivon.com): Eğitim. Sınava uygun testler, öğretici çözümler ve gelişim takibiyle çalışmayı daha hedefli hale getirin. Öne çıkanlar: Sınava ve seviyeye göre testler, Adım adım çözüm açıklamaları, Başarı ve eksik konu analizi.
+- [OdivonAPI](https://api.odivon.com): Geliştirici araçları. Sağlık, ekonomi ve konum verilerine yönelik API’leri tek katalogda keşfedin. Öne çıkanlar: Kategorilere ayrılmış API kataloğu, Hastane, eczane, banka ve istasyon verileri, Servis bazında kapsam ve erişim bilgileri.
+- [OdivonSamoInt](https://samo.odivon.com): Turizm teknolojisi. SAMO verilerini müşteri uygulamalarınıza veya B2B rezervasyon akışlarınıza bağlayın. Öne çıkanlar: Search API ve XML-Gate seçenekleri, Otel arama, fiyat ve rezervasyon akışları, B2B referans verisi entegrasyonu.
+- [Odivon ikimiz](https://ikimiz.odivon.com): Yaşam & ilişkiler. Ortak eşleşmeler, günlük küçük görevler ve buluşma fikirleriyle rutine yeni bir enerji katın. Öne çıkanlar: Secret Match ile ortak seçimler, Günlük görevler ve çift testleri, Buluşma fikirleri ve ortak istek listesi.
+- [OdivonF-Gas](https://fgas.odivon.com): F-Gaz uyumluluğu. Ekipman, gaz hareketi, sızıntı kontrolü ve teknisyen kanıtlarını tek denetim akışında yönetin. Öne çıkanlar: Ekipman ve gaz envanteri, Sızıntı kontrol planı, Denetime hazır servis kayıtları.
+- [OdivonFoodLabel](https://foodlabel.odivon.com): Gıda etiket yönetimi. Reçete, alerjen, besin değeri ve zorunlu beyanları baskıdan önce tek ürün kaydında doğrulayın. Öne çıkanlar: Reçete ve bileşen yönetimi, Alerjen kontrol motoru, Çok dilli etiket sürümleri.
+- [OdivonFireSafe](https://firesafe.odivon.com): Yangın güvenliği operasyonu. Söndürücü, dolap ve alarm varlıklarının periyodik bakımını QR destekli saha akışıyla izleyin. Öne çıkanlar: QR kimlikli varlık envanteri, Bakım ve ekip planlama, Müşteri raporu ve sertifika.

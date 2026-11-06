@@ -1,15 +1,15 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
-import { ArrowRight, ArrowUpRight, Check, Clock3, Receipt, Dumbbell, CalendarDays, Workflow, Sprout, Waves, Sparkles, CarFront, Gauge, CircleParking, Scissors, GraduationCap, Braces, Heart, PawPrint, PanelsTopLeft, Wind, Cog, Tags, ShieldCheck, Flame, Scale, Truck, Baby, ShieldAlert, Salad, X } from 'lucide-react';
+import Link from '@/components/plain-link';
+import { ArrowRight, ArrowUpRight, Check, Clock3, X } from 'lucide-react';
+import { productIcons as icons } from '@/lib/product-icons';
 import { usePreferences } from '@/components/site-shell';
 import { products, type Product } from '@/lib/products';
 import { ui } from '@/lib/ui-messages';
 import { Dialog, DialogTrigger, DialogContent, DialogTitle, DialogClose } from '@/components/ui/dialog';
 import { useScrollReveal } from '@/lib/use-scroll-reveal';
 
-const icons = { invoice: Receipt, gym: Dumbbell, apm: CalendarDays, integration: Workflow, farm: Sprout, spa: Waves, beauty: Sparkles, rent: CarFront, driving: Gauge, parking: CircleParking, hair: Scissors, school: GraduationCap, api: Braces, together: Heart, vet: PawPrint, erp: PanelsTopLeft, fgas: Wind, machine: Cog, food: Tags, safety: ShieldCheck, fire: Flame, fair: Scale, cargo: Truck, kids: Baby, cyber: ShieldAlert, diet: Salad };
 type Filter = 'all' | 'available' | 'upcoming';
 
 function ProductCard({ product, index }: { product: Product; index: number }) {
@@ -31,7 +31,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
     </div>
     <div className="showcase-copy">
       <span className="showcase-category">{product.category[locale]}</span>
-      <h2>{product.name}</h2>
+      <h2><Link href={`/urunler/${product.id}`}>{product.name}</Link></h2>
       <strong>{product.audience[locale]}</strong>
       <p>{product.description[locale]}</p>
       <div className="showcase-features">{product.features[locale].slice(0, 2).map(feature => <span key={feature}>{feature}</span>)}</div>
@@ -48,6 +48,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
             <div className="dialog-outcome"><span>{locale === 'tr' ? 'NE KAZANDIRIR?' : 'WHY IT MATTERS'}</span><p>{product.outcome[locale]}</p></div>
             <div className="dialog-feature-title">{locale === 'tr' ? 'Öne çıkanlar' : 'Highlights'}</div>
             <ul className="dialog-features">{product.features[locale].map(feature => <li key={feature}><Check size={17} />{feature}</li>)}</ul>
+            <Link className="dialog-page-link" href={`/urunler/${product.id}`}>{locale === 'tr' ? 'Ürün sayfasını aç' : 'Open product page'}<ArrowRight size={16} /></Link>
             {product.demoUrl ? <a className="button dialog-cta" href={product.demoUrl} target="_blank" rel="noopener noreferrer">{demoText}<ArrowUpRight size={18} /></a> : <p className="dialog-pending"><Clock3 size={17} />{product.status === 'pilot' ? (locale === 'tr' ? 'Pilot portal için herkese açık demo henüz yok.' : 'A public demo is not yet available for this pilot portal.') : (locale === 'tr' ? 'Bu ürün geliştirme aşamasında. Demo henüz açık değil.' : 'This product is in development. A demo is not available yet.')}</p>}
           </DialogContent>
         </Dialog>
@@ -80,6 +81,6 @@ export default function ProductsPage() {
       <div className="portfolio-heading" data-reveal><div><span className="section-label">01 / {u.catalogue.toLocaleUpperCase(locale)}</span><h2>{labels.section}</h2><p>{labels.sectionText}</p></div><fieldset className="portfolio-filters" aria-label={locale === 'tr' ? 'Ürün durumuna göre filtrele' : 'Filter products by status'}>{(['all','available','upcoming'] as const).map(key => <button key={key} type="button" className={filter === key ? 'active' : ''} aria-pressed={filter === key} onClick={() => setFilter(key)}>{labels[key]}<span>{key === 'all' ? products.length : key === 'available' ? liveCount : products.length - liveCount}</span></button>)}</fieldset></div>
       <div className="portfolio-grid">{visible.map(product => <ProductCard key={product.id} product={product} index={products.indexOf(product)} />)}</div>
     </section>
-    <section className="portfolio-end"><div className="wrap portfolio-end-inner" data-reveal><span className="section-label">ODIVON / {locale === 'tr' ? 'GERÇEK ÜRÜNLER' : 'REAL PRODUCTS'}</span><h2>{labels.ctaTitle}</h2><p>{labels.ctaText}</p><a href="#catalogue-list">{locale === 'tr' ? 'Ürünlere dön' : 'Back to products'}<ArrowUpRight size={18}/></a></div></section>
+    <section className="portfolio-end"><div className="wrap portfolio-end-inner" data-reveal><span className="section-label">ODIVON / {locale === 'tr' ? 'GERÇEK ÜRÜNLER' : 'REAL PRODUCTS'}</span><h2>{labels.ctaTitle}</h2><p>{labels.ctaText}</p><div className="portfolio-end-actions"><a className="button" href={`mailto:info@odivon.com?subject=${encodeURIComponent(locale === 'tr' ? 'Ürün demosu talebi' : 'Product demo request')}`}>{locale === 'tr' ? 'Demo veya teklif iste' : 'Request a demo or quote'}<ArrowUpRight size={18}/></a><a href="#catalogue-list">{locale === 'tr' ? 'Ürünlere dön' : 'Back to products'}<ArrowUpRight size={18}/></a></div></div></section>
   </main>;
 }
