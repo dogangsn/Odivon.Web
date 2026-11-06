@@ -14,6 +14,8 @@ export const site = {
   sectors: ['Kuaför ve güzellik salonu yazılımı', 'SPA yönetim yazılımı', 'Spor salonu yazılımı', 'Veteriner klinik yazılımı', 'Rent a car yazılımı', 'Sürücü kursu yazılımı', 'Otopark yönetim yazılımı', 'Ön muhasebe ve fatura yazılımı', 'ERP', 'Çiftlik ve hayvancılık yönetimi', 'Randevu yönetimi', 'Eğitim ve sınav hazırlık platformu', 'F-Gaz uyumluluk yazılımı', 'Gıda etiket yönetimi', 'Yangın güvenliği bakım takibi'],
   // Official profiles (LinkedIn, Instagram, X, YouTube...). TODO: add real URLs.
   sameAs: [] as string[],
+  // <lastmod> in sitemap.xml. Update it when page content changes.
+  contentUpdated: '2026-11-06',
   // Date shown on the legal pages. Update it whenever the texts change.
   legalUpdated: '2026-10-25',
   // TODO: replace with the registered company details (KVKK data controller).

@@ -1,4 +1,5 @@
-// Writes public/robots.txt, public/sitemap.xml and public/llms.txt from the
+// Writes (and the repo commits, so any build command serves them)
+// public/robots.txt, public/sitemap.xml and public/llms.txt from the
 // site settings and product catalogue, so they never drift from the code.
 // Node 22 strips TypeScript types, so the .ts sources import directly.
 import { writeFileSync } from 'node:fs';
@@ -8,7 +9,7 @@ import { products } from '../lib/products.ts';
 import { pageMeta } from '../lib/page-meta.ts';
 
 const out = name => fileURLToPath(new URL(`../public/${name}`, import.meta.url));
-const today = new Date().toISOString().slice(0, 10);
+const today = site.contentUpdated;
 const abs = path => `${site.url}${path === '/' ? '/' : path}`;
 
 // AI search and assistant crawlers are welcomed explicitly so the products
