@@ -10,6 +10,10 @@ export const site = {
   // Google Analytics 4 measurement ID (G-XXXXXXXXXX). Empty disables analytics.
   // TODO: add the real ID from Google Analytics > Admin > Data streams.
   gaMeasurementId: '',
+  // Sectors the products serve; used in structured data and llms.txt.
+  sectors: ['Kuaför ve güzellik salonu yazılımı', 'SPA yönetim yazılımı', 'Spor salonu yazılımı', 'Veteriner klinik yazılımı', 'Rent a car yazılımı', 'Sürücü kursu yazılımı', 'Otopark yönetim yazılımı', 'Ön muhasebe ve fatura yazılımı', 'ERP', 'Çiftlik ve hayvancılık yönetimi', 'Randevu yönetimi', 'Eğitim ve sınav hazırlık platformu', 'F-Gaz uyumluluk yazılımı', 'Gıda etiket yönetimi', 'Yangın güvenliği bakım takibi'],
+  // Official profiles (LinkedIn, Instagram, X, YouTube...). TODO: add real URLs.
+  sameAs: [] as string[],
   // Date shown on the legal pages. Update it whenever the texts change.
   legalUpdated: '2026-10-25',
   // TODO: replace with the registered company details (KVKK data controller).
@@ -29,3 +33,4 @@ export const sitePages = [
   { path: '/gizlilik-politikasi', priority: 0.3, changefreq: 'yearly' },
   { path: '/kullanim-sartlari', priority: 0.3, changefreq: 'yearly' },
 ] as const;
+export const SITE_URL = site.url;

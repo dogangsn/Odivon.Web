@@ -53,14 +53,32 @@ export const viewport: Viewport = {
   themeColor: '#0b1020',
 };
 
+// Organization + WebSite graph. Products are listed on /urunler (ItemList).
 const organizationJsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: site.name,
-  url: site.url,
-  logo: `${site.url}/favicon.svg`,
-  email: site.email,
-  contactPoint: [{ '@type': 'ContactPoint', email: site.email, contactType: 'customer support', availableLanguage: ['tr', 'en'] }],
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${site.url}/#organization`,
+      name: site.name,
+      url: site.url,
+      logo: `${site.url}/odivon-violet-loop.png`,
+      image: `${site.url}/og-image.jpg`,
+      email: site.email,
+      description: home.description,
+      knowsAbout: site.sectors,
+      sameAs: site.sameAs,
+      contactPoint: [{ '@type': 'ContactPoint', email: site.email, contactType: 'customer support', availableLanguage: ['Turkish', 'English'] }],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${site.url}/#website`,
+      name: site.name,
+      url: site.url,
+      inLanguage: ['tr-TR', 'en'],
+      publisher: { '@id': `${site.url}/#organization` },
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -77,7 +95,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd).replace(/</g, '\\u003c') }} />
         <SiteShell>{children}</SiteShell>
       </body>
     </html>

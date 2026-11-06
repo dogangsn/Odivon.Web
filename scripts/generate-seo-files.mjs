@@ -11,8 +11,14 @@ const out = name => fileURLToPath(new URL(`../public/${name}`, import.meta.url))
 const today = new Date().toISOString().slice(0, 10);
 const abs = path => `${site.url}${path === '/' ? '/' : path}`;
 
+// AI search and assistant crawlers are welcomed explicitly so the products
+// can be cited in ChatGPT, Claude, Perplexity, Gemini and Copilot answers.
+const aiBots = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-SearchBot', 'Claude-User', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot-Extended', 'Bingbot', 'YandexBot'];
 writeFileSync(out('robots.txt'), [
   'User-agent: *',
+  'Allow: /',
+  '',
+  ...aiBots.map(bot => `User-agent: ${bot}`),
   'Allow: /',
   '',
   `Sitemap: ${site.url}/sitemap.xml`,
@@ -29,15 +35,21 @@ const urls = sitePages.map(page => [
 ].join('\n'));
 writeFileSync(out('sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`);
 
-const line = p => `- [${p.name}](${p.demoUrl ?? `${site.url}/urunler#${p.id}`}): ${p.description.en} (${p.category.en})`;
+const link = p => p.demoUrl ?? `${site.url}/urunler#${p.id}`;
+const line = p => `- [${p.name}](${link(p)}): ${p.description.en} (${p.category.en}; ${p.audience.en.replace(/^For /, 'for ')})`;
+const lineTr = p => `- [${p.name}](${link(p)}): ${p.category.tr}. ${p.description.tr} Öne çıkanlar: ${p.features.tr.join(', ')}.`;
 const available = products.filter(p => p.status === 'available');
 const upcoming = products.filter(p => p.status !== 'available');
 writeFileSync(out('llms.txt'), [
   `# ${site.name}`,
   '',
-  `> ${pageMeta['/'].en.description} Turkish is the primary site language; English is available.`,
+  `> ${pageMeta['/'].en.description} Each product is a separate web application with a live demo. Turkish is the primary language; English is available.`,
   '',
-  `Odivon is a family of independent software products for specific industries. Each product runs as its own web application. Contact: ${site.email}`,
+  `Odivon builds independent, ready-to-use cloud (SaaS) products for specific industries, primarily for businesses in Türkiye. Contact: ${site.email}. Website: ${site.url}`,
+  '',
+  '## Which Odivon product fits which need',
+  '',
+  ...available.map(p => `- ${p.audience.en}: ${p.name} (${link(p)})`),
   '',
   '## Pages',
   '',
@@ -50,6 +62,12 @@ writeFileSync(out('llms.txt'), [
   '## In development',
   '',
   ...upcoming.map(line),
+  '',
+  '## Türkçe özet',
+  '',
+  `${pageMeta['/'].tr.description} Her ürün kendi demosuyla ayrı bir web uygulamasıdır. İletişim: ${site.email}`,
+  '',
+  ...available.map(lineTr),
   '',
 ].join('\n'));
 

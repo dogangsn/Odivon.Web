@@ -129,7 +129,7 @@ export const products: Product[] = [
     features: { tr: ['Secret Match ile ortak seçimler', 'Günlük görevler ve çift testleri', 'Buluşma fikirleri ve ortak istek listesi'], en: ['Shared choices through Secret Match', 'Daily prompts and couple quizzes', 'Date ideas and a shared wish list'] },
   },
   {
-    id: 'odivon-fgas', name: 'OdivonF-Gas', symbol: 'fgas', status: 'development',
+    id: 'odivon-fgas', name: 'OdivonF-Gas', symbol: 'fgas', status: 'available', demoUrl: 'https://fgas.odivon.com',
     category: { tr: 'F-Gaz uyumluluğu', en: 'F-gas compliance' }, audience: { tr: 'Soğutma, iklimlendirme ve ısı pompası servisleri için', en: 'For refrigeration, HVAC and heat-pump service companies' },
     description: { tr: 'Ekipman, gaz hareketi, sızıntı kontrolü ve teknisyen kanıtlarını tek denetim akışında yönetin.', en: 'Manage equipment, refrigerant movements, leak checks and technician evidence in one audit-ready flow.' },
     outcome: { tr: 'Yaklaşan kontrolleri kaçırmadan müşteriye ve denetçiye sunulabilir eksiksiz bir servis geçmişi oluşturun.', en: 'Build a complete service history for customers and auditors without missing an upcoming inspection.' },
@@ -143,7 +143,7 @@ export const products: Product[] = [
     features: { tr: ['Makine ve varyant sicili', 'Risk değerlendirme matrisi', 'Kanıt ve beyan dosyası'], en: ['Machine and variant register', 'Risk assessment matrix', 'Evidence and declaration file'] },
   },
   {
-    id: 'odivon-food-label', name: 'OdivonFoodLabel', symbol: 'food', status: 'development',
+    id: 'odivon-food-label', name: 'OdivonFoodLabel', symbol: 'food', status: 'available', demoUrl: 'https://foodlabel.odivon.com',
     category: { tr: 'Gıda etiket yönetimi', en: 'Food label management' }, audience: { tr: 'Gıda üreticileri, özel markalar ve kalite ekipleri için', en: 'For food manufacturers, private labels and quality teams' },
     description: { tr: 'Reçete, alerjen, besin değeri ve zorunlu beyanları baskıdan önce tek ürün kaydında doğrulayın.', en: 'Validate recipes, allergens, nutrition values and mandatory statements in one product record before print.' },
     outcome: { tr: 'Etiket revizyonlarını hızlandırın, alerjen hatalarını azaltın ve onay geçmişini koruyun.', en: 'Speed up label revisions, reduce allergen errors and preserve the full approval history.' },
@@ -157,7 +157,7 @@ export const products: Product[] = [
     features: { tr: ['Ürün güvenlik dosyası', 'Risk ve kanıt yönetimi', 'Olay ve geri çağırma akışı'], en: ['Product safety file', 'Risk and evidence management', 'Incident and recall workflow'] },
   },
   {
-    id: 'odivon-fire-safe', name: 'OdivonFireSafe', symbol: 'fire', status: 'development',
+    id: 'odivon-fire-safe', name: 'OdivonFireSafe', symbol: 'fire', status: 'available', demoUrl: 'https://firesafe.odivon.com',
     category: { tr: 'Yangın güvenliği operasyonu', en: 'Fire safety operations' }, audience: { tr: 'Yangın firmaları, tesis yönetimleri ve saha ekipleri için', en: 'For fire-safety companies, facilities and field teams' },
     description: { tr: 'Söndürücü, dolap ve alarm varlıklarının periyodik bakımını QR destekli saha akışıyla izleyin.', en: 'Track periodic maintenance for extinguishers, cabinets and alarms with a QR-assisted field workflow.' },
     outcome: { tr: 'Bakım tarihlerini kaçırmadan sahadaki fotoğraf, ölçüm ve imza kanıtını müşteriye anında sunun.', en: 'Avoid missed maintenance dates and deliver field photos, measurements and signatures to customers instantly.' },

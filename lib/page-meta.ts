@@ -7,21 +7,21 @@ type PageMeta = { title: string; description: string };
 export const pageMeta: Record<string, Record<Locale, PageMeta>> = {
   '/': {
     tr: {
-      title: 'Odivon — Yazılımın tek bir dünyası yok',
-      description: 'Odivon; finans, eğitim, işletme yönetimi ve yaşam alanlarında kullanıma açık dijital ürünler geliştirir. Ürünleri keşfet, demoları dene.',
+      title: 'Odivon — İşletmeler için bulut yazılım ürünleri',
+      description: 'Odivon; kuaför, spor salonu, veteriner, rent a car, sürücü kursu, otopark, e-fatura ve ERP gibi alanlarda işletmelerin kullanıma hazır bulut yazılımlarını geliştirir.',
     },
     en: {
-      title: 'Odivon — Software has more than one world',
-      description: 'Odivon builds digital products for finance, education, business operations and everyday life. Explore the products and try the live demos.',
+      title: 'Odivon — Cloud software products for businesses',
+      description: 'Odivon builds ready-to-use cloud software for hair salons, gyms, veterinary clinics, car rental, driving schools, parking, invoicing and ERP.',
     },
   },
   '/urunler': {
     tr: {
-      title: 'Ürünler — Odivon',
-      description: 'OdivonERP, OdivonGYM, OdivonFaturaPro, OdivonVET ve daha fazlası. Odivon ürün ailesini keşfet ve çalışan uygulamaları doğrudan dene.',
+      title: 'Ürünler — Odivon bulut yazılımları',
+      description: 'Kuaför, güzellik ve SPA salonu, spor salonu, veteriner kliniği, rent a car, sürücü kursu, otopark, e-fatura ve ERP için Odivon yazılımlarını inceleyin ve demolarını deneyin.',
     },
     en: {
-      title: 'Products — Odivon',
+      title: 'Products — Odivon cloud software',
       description: 'OdivonERP, OdivonGYM, OdivonFaturaPro, OdivonVET and more. Explore the Odivon product family and try the live applications.',
     },
   },
