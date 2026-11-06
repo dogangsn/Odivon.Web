@@ -178,7 +178,7 @@ export const products: Product[] = [
     features: { tr: ['Sevkiyat ve taraf kayıtları', 'Sürümlü belge merkezi', 'İstisna ve paylaşım portalı'], en: ['Shipment and party records', 'Versioned document center', 'Exception and sharing portal'] },
   },
   {
-    id: 'odivon-kids', name: 'OdivonKids', symbol: 'kids', status: 'development',
+    id: 'odivon-kids', name: 'OdivonKids', symbol: 'kids', status: 'available', demoUrl: 'https://kids.odivon.com',
     category: { tr: 'Kreş ve gündüz bakım', en: 'Childcare management' }, audience: { tr: 'Kreşler, anaokulları, öğretmenler ve veliler için', en: 'For nurseries, preschools, teachers and parents' },
     description: { tr: 'Yoklama, günlük akış, veli iletişimi, ödeme ve izin kayıtlarını güvenli tek merkezde toplayın.', en: 'Bring attendance, daily updates, parent communication, payments and permissions into one secure hub.' },
     outcome: { tr: 'Ekibin idari yükünü azaltırken ailelere çocuklarının günü hakkında güven veren bir görünürlük sunun.', en: 'Reduce administrative workload while giving families reassuring visibility into their child’s day.' },
@@ -192,7 +192,7 @@ export const products: Product[] = [
     features: { tr: ['Ürün ve sürüm sicili', 'SBOM ve zafiyet yönetimi', 'Risk, düzeltme ve uyum kanıtı'], en: ['Product and version register', 'SBOM and vulnerability management', 'Risk, remediation and compliance evidence'] },
   },
   {
-    id: 'odivon-diet', name: 'OdivonDiet', symbol: 'diet', status: 'development',
+    id: 'odivon-diet', name: 'OdivonDiet', symbol: 'diet', status: 'available', demoUrl: 'https://diet.odivon.com',
     category: { tr: 'Diyetisyen yönetimi', en: 'Dietitian management' }, audience: { tr: 'Diyetisyenler, beslenme klinikleri ve danışanlar için', en: 'For dietitians, nutrition clinics and clients' },
     description: { tr: 'Danışan kabulü, ölçüm, beslenme planı, takip ve paket süreçlerini profesyonel tek çalışma alanında birleştirin.', en: 'Unify client intake, measurements, meal plans, follow-ups and packages in one professional workspace.' },
     outcome: { tr: 'Plan hazırlama süresini azaltın, danışan ilerlemesini görünür kılın ve takip sürekliliğini artırın.', en: 'Reduce plan preparation time, make client progress visible and improve follow-up continuity.' },
