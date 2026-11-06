@@ -6,12 +6,16 @@
     "node": "22.x"
   },
   "scripts": {
+    "predev": "node scripts/generate-seo-files.mjs",
     "dev": "vinext dev",
+    "prebuild": "node scripts/generate-seo-files.mjs",
     "build": "vinext build",
     "build:static": "node scripts/build-static.mjs",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
-    "format": "oxfmt"
+    "format": "oxfmt",
+    "seo:generate": "node scripts/generate-seo-files.mjs",
+    "check:links": "node scripts/check-links.mjs"
   },
   "dependencies": {
     "react": "19.2.6",
