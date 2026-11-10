@@ -65,10 +65,12 @@ const organizationJsonLd = {
       logo: `${site.url}/odivon-violet-loop.png`,
       image: `${site.url}/og-image.jpg`,
       email: site.email,
+      telephone: site.phone,
+      address: { '@type': 'PostalAddress', streetAddress: site.address.street, addressLocality: site.address.district, addressRegion: site.address.city, addressCountry: site.address.country },
       description: home.description,
       knowsAbout: site.sectors,
       sameAs: site.sameAs,
-      contactPoint: [{ '@type': 'ContactPoint', email: site.email, contactType: 'customer support', availableLanguage: ['Turkish', 'English'] }],
+      contactPoint: [{ '@type': 'ContactPoint', email: site.email, telephone: site.phone, contactType: 'customer support', availableLanguage: ['Turkish', 'English'] }],
     },
     {
       '@type': 'WebSite',
