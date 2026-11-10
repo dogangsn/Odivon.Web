@@ -27,7 +27,7 @@ export const site = {
   // <lastmod> in sitemap.xml. Update it when page content changes.
   contentUpdated: '2026-11-06',
   // Date shown on the legal pages. Update it whenever the texts change.
-  legalUpdated: '2026-10-25',
+  legalUpdated: '2026-11-10',
   // TODO: replace with the registered company details (KVKK data controller).
   company: {
     legalName: '[Şirket unvanı]',
