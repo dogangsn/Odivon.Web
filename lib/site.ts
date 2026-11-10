@@ -11,11 +11,11 @@ export const site = {
   phone: '+90 532 486 17 98',
   phoneHref: 'tel:+905324861798',
   address: {
-    street: 'Gülveren Mah. 3743 Sk. No:13 Daire 10',
+    street: 'Mehmet Akif Ersoy Mah. 6719 Sk. Ünal Apt. No:32 İç Kapı No:7',
     district: 'Kepez',
     city: 'Antalya',
     country: 'TR',
-    full: 'Gülveren Mah. 3743 Sk. No:13 Daire 10 Kepez/Antalya',
+    full: 'Mehmet Akif Ersoy Mah. 6719 Sk. Ünal Apt. No:32 İç Kapı No:7 Kepez/Antalya',
   },
   // Google Analytics 4 measurement ID (G-XXXXXXXXXX). Empty disables analytics.
   // TODO: add the real ID from Google Analytics > Admin > Data streams.
@@ -31,7 +31,7 @@ export const site = {
   // TODO: replace with the registered company details (KVKK data controller).
   company: {
     legalName: '[Şirket unvanı]',
-    address: 'Gülveren Mah. 3743 Sk. No:13 Daire 10 Kepez/Antalya',
+    address: 'Mehmet Akif Ersoy Mah. 6719 Sk. Ünal Apt. No:32 İç Kapı No:7 Kepez/Antalya',
     mersis: '[MERSİS no]',
     taxOffice: '[Vergi dairesi / no]',
     kvkkEmail: 'info@odivon.com',

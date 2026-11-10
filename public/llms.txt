@@ -2,7 +2,7 @@
 
 > Odivon builds ready-to-use cloud software for hair salons, gyms, veterinary clinics, car rental, driving schools, parking, invoicing and ERP. Each product is a separate web application with a live demo. Turkish is the primary language; English is available.
 
-Odivon builds independent, ready-to-use cloud (SaaS) products for specific industries, primarily for businesses in Türkiye. Contact: info@odivon.com, +90 532 486 17 98. Address: Gülveren Mah. 3743 Sk. No:13 Daire 10 Kepez/Antalya. Website: https://odivon.com
+Odivon builds independent, ready-to-use cloud (SaaS) products for specific industries, primarily for businesses in Türkiye. Contact: info@odivon.com, +90 532 486 17 98. Address: Mehmet Akif Ersoy Mah. 6719 Sk. Ünal Apt. No:32 İç Kapı No:7 Kepez/Antalya. Website: https://odivon.com
 
 ## Which Odivon product fits which need
 
@@ -69,7 +69,7 @@ Odivon builds independent, ready-to-use cloud (SaaS) products for specific indus
 
 ## Türkçe özet
 
-Odivon; kuaför, spor salonu, veteriner, rent a car, sürücü kursu, otopark, e-fatura ve ERP gibi alanlarda işletmelerin kullanıma hazır bulut yazılımlarını geliştirir. Her ürün kendi demosuyla ayrı bir web uygulamasıdır. İletişim: info@odivon.com, +90 532 486 17 98, Gülveren Mah. 3743 Sk. No:13 Daire 10 Kepez/Antalya
+Odivon; kuaför, spor salonu, veteriner, rent a car, sürücü kursu, otopark, e-fatura ve ERP gibi alanlarda işletmelerin kullanıma hazır bulut yazılımlarını geliştirir. Her ürün kendi demosuyla ayrı bir web uygulamasıdır. İletişim: info@odivon.com, +90 532 486 17 98, Mehmet Akif Ersoy Mah. 6719 Sk. Ünal Apt. No:32 İç Kapı No:7 Kepez/Antalya
 
 - [OdivonERP](https://erp.odivon.com): Kurumsal platform. Lisanslı Odivon uygulamalarına tek oturumdan ulaşmak için geliştirilen kurumsal ürün portalı. Öne çıkanlar: Lisanslı modülleri tek panoda görme, Ürünler arası tek oturumla geçiş, Şirket seçimi ve hesap akışı.
 - [OdivonGYM](https://gym.odivon.com): Spor & performans. Sporcu gelişimini, antrenman performansını ve kulüp operasyonlarını aynı deneyimde buluşturun. Öne çıkanlar: Sporcu ve kulüp yönetimi, Antrenman ve performans takibi, Bireysel ve grup seansları için akışlar.
