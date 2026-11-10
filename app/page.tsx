@@ -2,7 +2,8 @@
 
 import Link from '@/components/plain-link';
 import type { CSSProperties } from 'react';
-import { ArrowUpRight, ArrowDown, ArrowRight, Focus, Layers3, MoveUpRight, Mail } from 'lucide-react';
+import { ArrowUpRight, ArrowDown, ArrowRight, Focus, Layers3, MoveUpRight, Mail, Phone, MapPin } from 'lucide-react';
+import { site } from '@/lib/site';
 import { usePreferences } from '@/components/site-shell';
 import { messages } from '@/lib/messages';
 import { ui } from '@/lib/ui-messages';
@@ -63,7 +64,13 @@ export default function Home() {
     <section id="iletisim" className="contact-section">
       <div className="wrap contact-inner">
         <div className="contact-copy" data-reveal><div className="contact-eyebrow"><Mail size={17} />{t.contactLabel}</div><h2>{t.contactTitle[0]}<br /><span>{t.contactTitle[1]}</span></h2><p>{t.contactText}</p></div>
-        <a className="contact-card" href="mailto:info@odivon.com" data-reveal><span>{t.contactEmailLabel}</span><strong>info@odivon.com</strong><span className="contact-card-foot">{t.contactAction}<ArrowUpRight size={24} /></span></a>
+        <div className="contact-side" data-reveal>
+          <a className="contact-card" href={`mailto:${site.email}`}><span>{t.contactEmailLabel}</span><strong>{site.email}</strong><span className="contact-card-foot">{t.contactAction}<ArrowUpRight size={24} /></span></a>
+          <address className="contact-details">
+            <a href={site.phoneHref}><Phone size={18} aria-hidden="true" /><span><small>{t.contactPhoneLabel}</small>{site.phone}</span></a>
+            <p><MapPin size={18} aria-hidden="true" /><span><small>{t.contactAddressLabel}</small>{site.address.full}</span></p>
+          </address>
+        </div>
       </div>
     </section>
   </main>;

@@ -36,6 +36,12 @@
 .contact-copy h2 span{color:#47754a}
 .contact-copy p{color:#36513c;max-width:540px;font-size:17px;line-height:1.72;margin:0}
 .contact-card{min-height:260px;background:#101a29;color:#f8f9ff;border:1px solid #365b44;border-radius:20px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 22px 55px #3154312b;transition:transform .3s,box-shadow .3s}
+.contact-side{display:flex;flex-direction:column;gap:14px;min-width:0}
+.contact-details{font-style:normal;display:grid;gap:10px}
+.contact-details a,.contact-details p{display:flex;align-items:flex-start;gap:12px;margin:0;padding:14px 16px;border:1px solid #406b4f40;border-radius:14px;background:#ffffff59;color:#15221e;font-size:16px;font-weight:650;line-height:1.45}
+.contact-details a:hover{background:#ffffff8c}
+.contact-details svg{flex:none;margin-top:2px;color:#315a3b}
+.contact-details small{display:block;font-size:11px;letter-spacing:2px;font-weight:800;color:#315a3b;margin-bottom:2px}
 .contact-card:hover{transform:translateY(-7px);box-shadow:0 30px 65px #31543140}
 .contact-card>span:first-child{font-size:12px;letter-spacing:2px;font-weight:750;color:#bcdbb7}
 .contact-card strong{font-size:clamp(26px,2.7vw,40px);font-weight:650;letter-spacing:-.04em;overflow-wrap:anywhere}

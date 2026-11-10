@@ -2,7 +2,7 @@
 
 > Odivon builds ready-to-use cloud software for hair salons, gyms, veterinary clinics, car rental, driving schools, parking, invoicing and ERP. Each product is a separate web application with a live demo. Turkish is the primary language; English is available.
 
-Odivon builds independent, ready-to-use cloud (SaaS) products for specific industries, primarily for businesses in Türkiye. Contact: info@odivon.com. Website: https://odivon.com
+Odivon builds independent, ready-to-use cloud (SaaS) products for specific industries, primarily for businesses in Türkiye. Contact: info@odivon.com, +90 532 486 17 98. Address: Gülveren Mah. 3743 Sk. No:13 Daire 10 Kepez/Antalya. Website: https://odivon.com
 
 ## Which Odivon product fits which need
 
@@ -25,6 +25,8 @@ Odivon builds independent, ready-to-use cloud (SaaS) products for specific indus
 - For refrigeration, HVAC and heat-pump service companies: OdivonF-Gas, product page https://odivon.com/urunler/odivon-fgas, live app https://fgas.odivon.com
 - For food manufacturers, private labels and quality teams: OdivonFoodLabel, product page https://odivon.com/urunler/odivon-food-label, live app https://foodlabel.odivon.com
 - For fire-safety companies, facilities and field teams: OdivonFireSafe, product page https://odivon.com/urunler/odivon-fire-safe, live app https://firesafe.odivon.com
+- For nurseries, preschools, teachers and parents: OdivonKids, product page https://odivon.com/urunler/odivon-kids, live app https://kids.odivon.com
+- For dietitians, nutrition clinics and clients: OdivonDiet, product page https://odivon.com/urunler/odivon-diet, live app https://diet.odivon.com
 
 ## Pages
 
@@ -54,6 +56,8 @@ Odivon builds independent, ready-to-use cloud (SaaS) products for specific indus
 - [OdivonF-Gas](https://fgas.odivon.com): Manage equipment, refrigerant movements, leak checks and technician evidence in one audit-ready flow. (F-gas compliance; for refrigeration, HVAC and heat-pump service companies)
 - [OdivonFoodLabel](https://foodlabel.odivon.com): Validate recipes, allergens, nutrition values and mandatory statements in one product record before print. (Food label management; for food manufacturers, private labels and quality teams)
 - [OdivonFireSafe](https://firesafe.odivon.com): Track periodic maintenance for extinguishers, cabinets and alarms with a QR-assisted field workflow. (Fire safety operations; for fire-safety companies, facilities and field teams)
+- [OdivonKids](https://kids.odivon.com): Bring attendance, daily updates, parent communication, payments and permissions into one secure hub. (Childcare management; for nurseries, preschools, teachers and parents)
+- [OdivonDiet](https://diet.odivon.com): Unify client intake, measurements, meal plans, follow-ups and packages in one professional workspace. (Dietitian management; for dietitians, nutrition clinics and clients)
 
 ## In development
 
@@ -61,13 +65,11 @@ Odivon builds independent, ready-to-use cloud (SaaS) products for specific indus
 - [OdivonProductSafe](https://odivon.com/urunler/odivon-product-safe): Connect product identity, economic operators, risk evidence and incident records to sales channels. (Product safety; for manufacturers, importers and online sellers)
 - [OdivonPayFair](https://odivon.com/urunler/odivon-pay-fair): Make equivalent-work groups, pay gaps and remediation actions visible in a controlled analytics workspace. (Pay transparency; for HR, compensation and leadership teams)
 - [OdivonCargoDocs](https://odivon.com/urunler/odivon-cargo-docs): Manage transport orders, parties, cargo data and evidence documents in one shipment file. (Digital freight documents; for carriers, logistics operators and cargo owners)
-- [OdivonKids](https://odivon.com/urunler/odivon-kids): Bring attendance, daily updates, parent communication, payments and permissions into one secure hub. (Childcare management; for nurseries, preschools, teachers and parents)
 - [OdivonCyberReady](https://odivon.com/urunler/odivon-cyber-ready): Build an auditable security file linking SBOMs, vulnerabilities, risks and remediation to product versions. (Product cybersecurity; for connected-product manufacturers and software teams)
-- [OdivonDiet](https://odivon.com/urunler/odivon-diet): Unify client intake, measurements, meal plans, follow-ups and packages in one professional workspace. (Dietitian management; for dietitians, nutrition clinics and clients)
 
 ## Türkçe özet
 
-Odivon; kuaför, spor salonu, veteriner, rent a car, sürücü kursu, otopark, e-fatura ve ERP gibi alanlarda işletmelerin kullanıma hazır bulut yazılımlarını geliştirir. Her ürün kendi demosuyla ayrı bir web uygulamasıdır. İletişim: info@odivon.com
+Odivon; kuaför, spor salonu, veteriner, rent a car, sürücü kursu, otopark, e-fatura ve ERP gibi alanlarda işletmelerin kullanıma hazır bulut yazılımlarını geliştirir. Her ürün kendi demosuyla ayrı bir web uygulamasıdır. İletişim: info@odivon.com, +90 532 486 17 98, Gülveren Mah. 3743 Sk. No:13 Daire 10 Kepez/Antalya
 
 - [OdivonERP](https://erp.odivon.com): Kurumsal platform. Lisanslı Odivon uygulamalarına tek oturumdan ulaşmak için geliştirilen kurumsal ürün portalı. Öne çıkanlar: Lisanslı modülleri tek panoda görme, Ürünler arası tek oturumla geçiş, Şirket seçimi ve hesap akışı.
 - [OdivonGYM](https://gym.odivon.com): Spor & performans. Sporcu gelişimini, antrenman performansını ve kulüp operasyonlarını aynı deneyimde buluşturun. Öne çıkanlar: Sporcu ve kulüp yönetimi, Antrenman ve performans takibi, Bireysel ve grup seansları için akışlar.
@@ -88,3 +90,5 @@ Odivon; kuaför, spor salonu, veteriner, rent a car, sürücü kursu, otopark, e
 - [OdivonF-Gas](https://fgas.odivon.com): F-Gaz uyumluluğu. Ekipman, gaz hareketi, sızıntı kontrolü ve teknisyen kanıtlarını tek denetim akışında yönetin. Öne çıkanlar: Ekipman ve gaz envanteri, Sızıntı kontrol planı, Denetime hazır servis kayıtları.
 - [OdivonFoodLabel](https://foodlabel.odivon.com): Gıda etiket yönetimi. Reçete, alerjen, besin değeri ve zorunlu beyanları baskıdan önce tek ürün kaydında doğrulayın. Öne çıkanlar: Reçete ve bileşen yönetimi, Alerjen kontrol motoru, Çok dilli etiket sürümleri.
 - [OdivonFireSafe](https://firesafe.odivon.com): Yangın güvenliği operasyonu. Söndürücü, dolap ve alarm varlıklarının periyodik bakımını QR destekli saha akışıyla izleyin. Öne çıkanlar: QR kimlikli varlık envanteri, Bakım ve ekip planlama, Müşteri raporu ve sertifika.
+- [OdivonKids](https://kids.odivon.com): Kreş ve gündüz bakım. Yoklama, günlük akış, veli iletişimi, ödeme ve izin kayıtlarını güvenli tek merkezde toplayın. Öne çıkanlar: Öğrenci, veli ve teslim yetkisi, Yoklama ve günlük akış, Duyuru, izin ve ücret takibi.
+- [OdivonDiet](https://diet.odivon.com): Diyetisyen yönetimi. Danışan kabulü, ölçüm, beslenme planı, takip ve paket süreçlerini profesyonel tek çalışma alanında birleştirin. Öne çıkanlar: Danışan dosyası ve onam, Ölçüm ve ilerleme grafikleri, Beslenme planı, randevu ve paket.

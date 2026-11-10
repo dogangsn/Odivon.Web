@@ -167,7 +167,7 @@ export const terms: Record<Locale, LegalDoc> = {
         'Bu şartlar Türkiye Cumhuriyeti hukukuna tabidir. Uyuşmazlıklarda [şehir] mahkemeleri ve icra daireleri yetkilidir. Tüketici sıfatıyla hareket eden kullanıcıların tüketici hakem heyetlerine ve tüketici mahkemelerine başvuru hakları saklıdır.',
       ] },
       { id: 'iletisim', title: '10. İletişim', blocks: [
-        `${c.legalName}, ${c.address}. E-posta: ${site.email}`,
+        `${c.legalName}, ${c.address}. Telefon: ${site.phone}. E-posta: ${site.email}`,
       ] },
     ],
   },
@@ -211,7 +211,7 @@ export const terms: Record<Locale, LegalDoc> = {
         'These terms are governed by the laws of the Republic of Türkiye. The courts and enforcement offices of [city] have jurisdiction. Consumers keep their rights to apply to consumer arbitration committees and consumer courts.',
       ] },
       { id: 'iletisim', title: '10. Contact', blocks: [
-        `${c.legalName}, ${c.address}. Email: ${site.email}`,
+        `${c.legalName}, ${c.address}. Phone: ${site.phone}. Email: ${site.email}`,
       ] },
     ],
   },
