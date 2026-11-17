@@ -136,7 +136,7 @@ export const products: Product[] = [
     features: { tr: ['Ekipman ve gaz envanteri', 'Sızıntı kontrol planı', 'Denetime hazır servis kayıtları'], en: ['Equipment and refrigerant inventory', 'Leak-check planning', 'Audit-ready service records'] },
   },
   {
-    id: 'odivon-machine-ce', name: 'OdivonMachineCE', symbol: 'machine', status: 'development',
+    id: 'odivon-machine-ce', name: 'OdivonMachineCE', symbol: 'machine', status: 'development', demoUrl: 'https://machinece.odivon.com',
     category: { tr: 'Makine uygunluğu', en: 'Machinery compliance' }, audience: { tr: 'Makine üreticileri, entegratörler ve teknik danışmanlar için', en: 'For machinery manufacturers, integrators and technical consultants' },
     description: { tr: 'Risk değerlendirmesinden uygunluk beyanına kadar CE teknik dosyasını yaşayan bir süreç olarak yönetin.', en: 'Manage the CE technical file as a living process, from risk assessment through declaration of conformity.' },
     outcome: { tr: 'Riskleri, standartları ve kanıtları ürün sürümüne bağlayarak dosya hazırlama süresini ve eksik belge riskini azaltın.', en: 'Link risks, standards and evidence to product versions to reduce preparation time and missing-document risk.' },
