@@ -18,8 +18,8 @@ export const site = {
     full: 'Mehmet Akif Ersoy Mah. 6719 Sk. Ünal Apt. No:32 İç Kapı No:7 Kepez/Antalya',
   },
   // Google Analytics 4 measurement ID (G-XXXXXXXXXX). Empty disables analytics.
-  // TODO: add the real ID from Google Analytics > Admin > Data streams.
-  gaMeasurementId: '',
+  // Data stream "Odivon" (https://odivon.com) in Google Analytics > Admin > Data streams.
+  gaMeasurementId: 'G-HE21XSKFCT',
   // Sectors the products serve; used in structured data and llms.txt.
   sectors: ['Kuaför ve güzellik salonu yazılımı', 'SPA yönetim yazılımı', 'Spor salonu yazılımı', 'Veteriner klinik yazılımı', 'Rent a car yazılımı', 'Sürücü kursu yazılımı', 'Otopark yönetim yazılımı', 'Ön muhasebe ve fatura yazılımı', 'ERP', 'Çiftlik ve hayvancılık yönetimi', 'Randevu yönetimi', 'Eğitim ve sınav hazırlık platformu', 'F-Gaz uyumluluk yazılımı', 'Gıda etiket yönetimi', 'Yangın güvenliği bakım takibi'],
   // Official profiles (LinkedIn, Instagram, X, YouTube...). TODO: add real URLs.

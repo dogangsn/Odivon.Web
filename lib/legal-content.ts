@@ -39,7 +39,7 @@ export const privacy: Record<Locale, LegalDoc> = {
       ] },
       { id: 'cerezler', title: '4. Çerezler ve benzeri teknolojiler', blocks: [
         'Zorunlu tercihler (her zaman açık): odivon-language, odivon-theme ve odivon-consent anahtarları tarayıcının yerel depolamasında tutulur. Sunucuya gönderilmez, sen silene kadar kalır.',
-        'Analitik çerezler (yalnızca izinle): Google Analytics 4 kullanılırsa _ga ve _ga_<ID> çerezleri en fazla 2 yıl saklanır. İzin vermediğin sürece Google Analytics betiği hiç yüklenmez.',
+        'Analitik çerezler (yalnızca izinle): Google Analytics 4 (ölçüm kimliği G-HE21XSKFCT) _ga ve _ga_<ID> çerezleri en fazla 2 yıl saklanır. İzin vermediğin sürece Google Analytics betiği hiç yüklenmez.',
         'Seçimini sayfanın altındaki “Çerez tercihleri” bağlantısından istediğin an değiştirebilirsin. Rızanı geri aldığında analitik çerezler silinir.',
       ] },
       { id: 'aktarim', title: '5. Verilerin aktarılması', blocks: [
@@ -96,7 +96,7 @@ export const privacy: Record<Locale, LegalDoc> = {
       ] },
       { id: 'cerezler', title: '4. Cookies and similar technologies', blocks: [
         'Essential preferences (always on): odivon-language, odivon-theme and odivon-consent are kept in your browser’s local storage. They are never sent to a server and stay until you delete them.',
-        'Analytics cookies (consent only): if Google Analytics 4 is enabled, _ga and _ga_<ID> cookies are kept for up to 2 years. The Google Analytics script is not loaded at all until you consent.',
+        'Analytics cookies (consent only): Google Analytics 4 (measurement ID G-HE21XSKFCT) sets _ga and _ga_<ID> cookies, kept for up to 2 years. The Google Analytics script is not loaded at all until you consent.',
         'Change your choice at any time from “Cookie preferences” at the bottom of every page. Withdrawing consent deletes the analytics cookies.',
       ] },
       { id: 'aktarim', title: '5. Sharing your data', blocks: [
